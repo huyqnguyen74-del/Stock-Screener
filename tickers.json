@@ -1,0 +1,21 @@
+{
+  "categories": {
+    "Top Semi Stock": [
+      "APP", "IFNNY", "BE", "JBL", "IBM", "DRAM", "TSM", "META", "SNDK", "WDC",
+      "MU", "AVGO", "AMD", "VRT", "MSFT", "GOOGL", "AAPL", "INTC", "NVDA", "AMZN",
+      "ARM", "NBIS", "CLS", "CRDO", "MRVL", "ANET", "ETN", "LRCX", "CBRS", "AMKR",
+      "COHR", "TER", "GLW", "ORCL", "AMAT", "TSLA"
+    ],
+    "Tier 2 Semi Stock": [
+      "QNT", "POET", "TXT", "A", "AA", "SCCO", "TSLA", "EXE", "PLTR", "SOFI",
+      "HOOD", "RRX", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI",
+      "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG", "SHOP", "DRAM",
+      "NOK", "IBM", "NFLX", "USAR", "IREN", "APLD"
+    ],
+    "ETFs": [
+      "QQQM", "SOXL", "SPMO", "MGK", "SOXX", "IWB", "KIE", "VDE", "SCHD", "VHT",
+      "SPYM", "VFH", "SLV", "IBB", "SMH", "MAGS", "XLK", "ISPY", "QQQI", "XLE",
+      "IBIT", "SPXL", "TQQQ", "GDX", "QQQ", "SPY"
+    ]
+  }
+}

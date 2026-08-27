@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Screener // Daily Watchlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F6F8;
+    --panel:#FFFFFF;
+    --border:#E2E5EA;
+    --text:#1A1F29;
+    --muted:#6B7280;
+    --buy:#1F7A4D;
+    --buy-bg:#E7F5EC;
+    --buy-border:#BFE3CD;
+    --top-semi:#4C51BF;
+    --tier2-semi:#B7791F;
+    --etf:#0F766E;
+    --mono:'IBM Plex Mono', monospace;
+    --display:'Space Grotesk', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--mono);
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    padding:28px clamp(16px,4vw,48px) 18px;
+    border-bottom:1px solid var(--border);
+    background:var(--panel);
+  }
+  .title-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  h1{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:22px;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  h1 span{color:var(--buy);}
+  .meta{
+    color:var(--muted);
+    font-size:13px;
+  }
+
+  /* Ticker tape */
+  .tape-wrap{
+    overflow:hidden;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    background:#101418;
+    white-space:nowrap;
+  }
+  .tape{
+    display:inline-block;
+    padding:9px 0;
+    animation:scroll 32s linear infinite;
+    font-size:13px;
+    color:#EAF6EF;
+  }
+  .tape span{ padding:0 22px; }
+  .tape .empty{ color:#8A94A0; }
+  @keyframes scroll{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .tape{ animation:none; }
+  }
+
+  main{ padding:24px clamp(16px,4vw,48px) 60px; max-width:1080px; margin:0 auto; }
+
+  .category{ margin-bottom:34px; }
+  .category-head{
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:10px;
+  }
+  .swatch{ width:9px; height:9px; border-radius:2px; }
+  .category-head h2{
+    font-family:var(--display);
+    font-size:15px;
+    font-weight:600;
+    margin:0;
+    letter-spacing:0.01em;
+  }
+  .category-head .count{
+    color:var(--muted);
+    font-size:12px;
+  }
+
+  table{ width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  thead th{
+    text-align:left;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--muted);
+    font-weight:500;
+    padding:10px 14px;
+    border-bottom:1px solid var(--border);
+  }
+  tbody td{
+    padding:10px 14px;
+    font-size:13.5px;
+    border-bottom:1px solid var(--border);
+  }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr.buy{ background:var(--buy-bg); }
+  .ticker{ font-weight:600; }
+  .badge{
+    display:inline-block;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    color:#fff;
+    background:var(--buy);
+    padding:2px 7px;
+    border-radius:4px;
+  }
+  .pending-badge{
+    display:inline-block;
+    font-size:10.5px;
+    font-weight:600;
+    color:var(--muted);
+    border:1px dashed var(--border);
+    padding:1px 7px;
+    border-radius:4px;
+  }
+  .num{ text-align:right; }
+  .err{ color:var(--muted); font-style:italic; }
+
+  /* Add ticker */
+  .add-box{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:18px 20px;
+    margin-top:8px;
+  }
+  .add-box h3{
+    font-family:var(--display);
+    font-size:14px;
+    margin:0 0 4px;
+  }
+  .add-box p{ color:var(--muted); font-size:12.5px; line-height:1.5; margin:0 0 12px; }
+  .add-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .add-row input, .add-row select{
+    font-family:var(--mono);
+    font-size:13px;
+    padding:8px 10px;
+    border:1px solid var(--border);
+    border-radius:6px;
+    background:#fff;
+  }
+  .add-row button{
+    font-family:var(--mono);
+    font-size:13px;
+    font-weight:600;
+    padding:8px 16px;
+    border-radius:6px;
+    border:none;
+    background:var(--text);
+    color:#fff;
+    cursor:pointer;
+  }
+  .snippet{
+    margin-top:12px;
+    background:#0F1216;
+    color:#D8E4DC;
+    padding:10px 12px;
+    border-radius:6px;
+    font-size:12.5px;
+    display:none;
+    white-space:pre-wrap;
+    word-break:break-all;
+  }
+  .pending-list{ margin-top:10px; font-size:12px; color:var(--muted); }
+  .loading, .error-msg{ color:var(--muted); font-size:13px; padding:20px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="title-row">
+    <h1>Daily Screener <span>//</span> RSI &lt; 32 &amp; Price &gt; 200MA</h1>
+    <div class="meta" id="last-updated">Loading last run…</div>
+  </div>
+</header>
+
+<div class="tape-wrap">
+  <div class="tape" id="tape"><span class="empty">Loading buy signals…</span></div>
+</div>
+
+<main>
+  <div id="content"><div class="loading">Loading results.json…</div></div>
+
+  <div class="add-box">
+    <h3>Add a stock to the watchlist</h3>
+    <p>
+      This adds a local preview ("pending") right away on this device. To make it part of the
+      permanent daily screener, add it to <code>tickers.json</code> in your GitHub repo —
+      click the snippet below to copy the exact line once you've filled in the form.
+    </p>
+    <div class="add-row">
+      <input id="new-ticker" type="text" placeholder="Ticker, e.g. NVDA" maxlength="8" />
+      <select id="new-category">
+        <option>Top Semi Stock</option>
+        <option>Tier 2 Semi Stock</option>
+        <option>ETFs</option>
+      </select>
+      <button onclick="addTicker()">Add</button>
+    </div>
+    <div class="snippet" id="snippet"></div>
+    <div class="pending-list" id="pending-list"></div>
+  </div>
+</main>
+
+<script>
+const CATEGORY_COLORS = {
+  "Top Semi Stock": "var(--top-semi)",
+  "Tier 2 Semi Stock": "var(--tier2-semi)",
+  "ETFs": "var(--etf)"
+};
+
+let RESULTS = null;
+
+function loadPending(){
+  return JSON.parse(localStorage.getItem('pendingTickers') || '[]');
+}
+function savePending(list){
+  localStorage.setItem('pendingTickers', JSON.stringify(list));
+}
+
+function addTicker(){
+  const tickerInput = document.getElementById('new-ticker');
+  const categorySelect = document.getElementById('new-category');
+  const ticker = tickerInput.value.trim().toUpperCase();
+  const category = categorySelect.value;
+  if(!ticker){ return; }
+
+  const pending = loadPending();
+  pending.push({ ticker, category });
+  savePending(pending);
+
+  const snippet = document.getElementById('snippet');
+  snippet.style.display = 'block';
+  snippet.textContent = `Add "${ticker}" to the "${category}" array in tickers.json, then commit the change on GitHub. Next scheduled run will pick it up automatically.`;
+
+  tickerInput.value = '';
+  renderPending();
+  render(); // re-render with pending badge included
+}
+
+function renderPending(){
+  const pending = loadPending();
+  const el = document.getElementById('pending-list');
+  if(pending.length === 0){ el.textContent = ''; return; }
+  el.textContent = 'Pending locally (not yet in tickers.json): ' + pending.map(p => `${p.ticker} (${p.category})`).join(', ');
+}
+
+function rowHtml(item, category){
+  if(item.error){
+    return `<tr><td class="ticker">${item.ticker}</td><td colspan="4" class="err">Unavailable — ${item.error}</td></tr>`;
+  }
+  const buy = item.buy_signal;
+  return `<tr class="${buy ? 'buy' : ''}">
+    <td class="ticker">${item.ticker}</td>
+    <td class="num">$${item.price.toFixed(2)}</td>
+    <td class="num">${item.rsi.toFixed(1)}</td>
+    <td class="num">$${item.ma200.toFixed(2)}</td>
+    <td>${buy ? '<span class="badge">BUY OPPORTUNITY</span>' : ''}</td>
+  </tr>`;
+}
+
+function render(){
+  if(!RESULTS) return;
+  const content = document.getElementById('content');
+  const pending = loadPending();
+  content.innerHTML = '';
+
+  const buyTickers = [];
+
+  Object.entries(RESULTS.categories).forEach(([category, items]) => {
+    const sorted = [...items].sort((a,b) => {
+      const aBuy = a.buy_signal ? 1 : 0;
+      const bBuy = b.buy_signal ? 1 : 0;
+      if(aBuy !== bBuy) return bBuy - aBuy;
+      return a.ticker.localeCompare(b.ticker);
+    });
+
+    sorted.forEach(i => { if(i.buy_signal) buyTickers.push(i.ticker); });
+
+    const pendingForCategory = pending.filter(p => p.category === category);
+
+    const section = document.createElement('div');
+    section.className = 'category';
+    section.innerHTML = `
+      <div class="category-head">
+        <div class="swatch" style="background:${CATEGORY_COLORS[category] || '#999'}"></div>
+        <h2>${category}</h2>
+        <span class="count">${items.length} tracked</span>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Ticker</th><th class="num">Price</th><th class="num">RSI(14)</th><th class="num">200 MA</th><th>Signal</th>
+        </tr></thead>
+        <tbody>
+          ${sorted.map(i => rowHtml(i, category)).join('')}
+          ${pendingForCategory.map(p => `<tr><td class="ticker">${p.ticker}</td><td colspan="3" class="err">Pending — add to tickers.json</td><td><span class="pending-badge">PENDING</span></td></tr>`).join('')}
+        </tbody>
+      </table>
+    `;
+    content.appendChild(section);
+  });
+
+  const tape = document.getElementById('tape');
+  if(buyTickers.length === 0){
+    tape.innerHTML = '<span class="empty">No buy signals today — nothing under RSI 32 while above its 200-day MA.</span>';
+  } else {
+    const list = buyTickers.map(t => `<span>▲ ${t} — BUY OPPORTUNITY</span>`).join('');
+    tape.innerHTML = list + list; // duplicated for seamless scroll
+  }
+
+  renderPending();
+}
+
+fetch('./results.json?_=' + Date.now())
+  .then(r => {
+    if(!r.ok) throw new Error('results.json not found yet — has the first scheduled run happened?');
+    return r.json();
+  })
+  .then(data => {
+    RESULTS = data;
+    const d = new Date(data.generated_at);
+    document.getElementById('last-updated').textContent = 'Last run: ' + d.toLocaleString();
+    render();
+  })
+  .catch(err => {
+    document.getElementById('content').innerHTML = `<div class="error-msg">${err.message}</div>`;
+  });
+</script>
+
+</body>
+</html>
