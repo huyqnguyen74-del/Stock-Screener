@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T03:01:30.930105+00:00",
+  "generated_at": "2026-09-01T03:03:39.808486+00:00",
   "categories": {
     "Top Semi Stock": [
       {
@@ -785,6 +785,14 @@
         "ma200": 707.87,
         "above_200ma": true,
         "buy_signal": false
+      },
+      {
+        "ticker": "MTUM",
+        "price": 300.36,
+        "rsi": 42.7,
+        "ma200": 277.24,
+        "above_200ma": true,
+        "buy_signal": true
       }
     ]
   }
