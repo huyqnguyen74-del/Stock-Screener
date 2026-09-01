@@ -1,27 +1,4 @@
 {
   "date": "2026-09-01",
-  "tickers": [
-    "AMAT",
-    "ARM",
-    "AVGO",
-    "BE",
-    "COHR",
-    "ETN",
-    "GLW",
-    "GOOGL",
-    "HUT",
-    "IFNNY",
-    "INTC",
-    "JBL",
-    "KLAC",
-    "LRCX",
-    "MTUM",
-    "PENG",
-    "SOXL",
-    "SOXX",
-    "STM",
-    "TER",
-    "VRT",
-    "WDC"
-  ]
+  "tickers": []
 }
