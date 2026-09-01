@@ -10,12 +10,12 @@
       "QNT", "POET", "CCJ","TXT", "A", "AA", "SCCO", "TSLA", "EXE", "PLTR", "SOFI",
       "HOOD", "RRX", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI",
       "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG", "SHOP", "DRAM",
-      "NOK", "IBM", "NFLX", "USAR", "IREN", "APLD"
+      "NOK", "IBM", "NFLX", "USAR", "IREN", "APLD","RKLB"
     ],
     "ETFs": [
       "QQQM", "SOXL", "SPMO", "MGK", "SOXX", "IWB", "KIE", "VDE", "SCHD", "VHT",
       "SPYM", "VFH", "SLV", "IBB", "SMH", "MAGS", "XLK", "ISPY", "QQQI", "XLE",
-      "IBIT", "SPXL", "TQQQ", "GDX", "QQQ", "SPY",  "RKLB"
+      "IBIT", "SPXL", "TQQQ", "GDX", "QQQ", "SPY",  
     ]
   }
 }
