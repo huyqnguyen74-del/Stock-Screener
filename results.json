@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T02:57:29.868292+00:00",
+  "generated_at": "2026-09-01T03:01:30.930105+00:00",
   "categories": {
     "Top Semi Stock": [
       {
@@ -567,6 +567,14 @@
         "ma200": 32.17,
         "above_200ma": false,
         "buy_signal": false
+      },
+      {
+        "ticker": "RKLB",
+        "price": 63.92,
+        "rsi": 34.8,
+        "ma200": 79.13,
+        "above_200ma": false,
+        "buy_signal": false
       }
     ],
     "ETFs": [
@@ -776,14 +784,6 @@
         "rsi": 54.08,
         "ma200": 707.87,
         "above_200ma": true,
-        "buy_signal": false
-      },
-      {
-        "ticker": "RKLB",
-        "price": 63.92,
-        "rsi": 34.8,
-        "ma200": 79.13,
-        "above_200ma": false,
         "buy_signal": false
       }
     ]
