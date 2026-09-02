@@ -200,11 +200,12 @@ def main():
     save_notified(today, current_tickers)  # this run's state becomes the baseline for the next check
 
     # --- hourly "all clear" status email (6:30, 7:30, ... 12:30 PT) ---
-    # Only fires when NOTHING currently qualifies, so it never duplicates
-    # a real buy-signal email — think of it as a "still watching" heartbeat.
-    pt_now = now.astimezone(PACIFIC)
-    is_hourly_checkpoint = pt_now.minute == 30
+    # Driven by an explicit signal from the workflow (IS_HOURLY_CHECK), not
+    # by checking the wall clock — GitHub's scheduled runs can start a few
+    # minutes late, so a strict "is it :30 right now" check is unreliable.
+    is_hourly_checkpoint = os.environ.get("IS_HOURLY_CHECK", "false").lower() == "true"
     if is_hourly_checkpoint and not current_tickers:
+        pt_now = now.astimezone(PACIFIC)
         send_status_email(pt_now.strftime("%-I:%M%p"))
 
     print("Done.")
