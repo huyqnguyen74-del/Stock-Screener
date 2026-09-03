@@ -31,8 +31,8 @@ import pandas as pd
 import yfinance as yf
 
 RSI_PERIOD = 14
-MA_PERIOD = 200
-RSI_BUY_THRESHOLD = 32
+MA_PERIOD = 350
+RSI_BUY_THRESHOLD = 33
 
 NOTIFIED_FILE = "notified.json"
 PACIFIC = ZoneInfo("America/Los_Angeles")
