@@ -1,26 +1,46 @@
 {
-  "generated_at": "2026-09-03T03:00:59.053365+00:00",
+  "generated_at": "2026-09-03T03:06:14.569496+00:00",
   "categories": {
     "Top Semi Stock": [
       {
         "ticker": "APP",
-        "error": "insufficient_history"
+        "price": 319.05,
+        "rsi": 39.82,
+        "ma200": 488.36,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IFNNY",
-        "error": "insufficient_history"
+        "price": 64.71,
+        "rsi": 40.95,
+        "ma200": 61.02,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "BE",
-        "error": "insufficient_history"
+        "price": 217.28,
+        "rsi": 49.8,
+        "ma200": 189.91,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "JBL",
-        "error": "insufficient_history"
+        "price": 299.39,
+        "rsi": 38.17,
+        "ma200": 291.64,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "IBM",
-        "error": "insufficient_history"
+        "price": 231.7,
+        "rsi": 47.34,
+        "ma200": 259.6,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "DRAM",
@@ -28,91 +48,179 @@
       },
       {
         "ticker": "TSM",
-        "error": "insufficient_history"
+        "price": 415.5,
+        "rsi": 48.63,
+        "ma200": 370.41,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "META",
-        "error": "insufficient_history"
+        "price": 592.85,
+        "rsi": 55.18,
+        "ma200": 621.51,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SNDK",
-        "error": "insufficient_history"
+        "price": 1553.4,
+        "rsi": 52.5,
+        "ma200": 990.09,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "WDC",
-        "error": "insufficient_history"
+        "price": 448.9,
+        "rsi": 43.46,
+        "ma200": 369.77,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "MU",
-        "error": "insufficient_history"
+        "price": 956.08,
+        "rsi": 53.23,
+        "ma200": 598.91,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "AVGO",
-        "error": "insufficient_history"
+        "price": 367.24,
+        "rsi": 42.13,
+        "ma200": 368.86,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AMD",
-        "error": "insufficient_history"
+        "price": 457.06,
+        "rsi": 42.98,
+        "ma200": 338.77,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "VRT",
-        "error": "insufficient_history"
+        "price": 256.7,
+        "rsi": 42.33,
+        "ma200": 256.29,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "MSFT",
-        "error": "insufficient_history"
+        "price": 496.82,
+        "rsi": 61.15,
+        "ma200": 429.37,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "GOOGL",
-        "error": "insufficient_history"
+        "price": 337.12,
+        "rsi": 43.14,
+        "ma200": 335.11,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "AAPL",
-        "error": "insufficient_history"
+        "price": 324.96,
+        "rsi": 60.95,
+        "ma200": 282.89,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "INTC",
-        "error": "insufficient_history"
+        "price": 90.05,
+        "rsi": 42.77,
+        "ma200": 73.57,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "NVDA",
-        "error": "insufficient_history"
+        "price": 224.41,
+        "rsi": 56.67,
+        "ma200": 196.11,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "AMZN",
-        "error": "insufficient_history"
+        "price": 254.98,
+        "rsi": 46.38,
+        "ma200": 238.87,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "ARM",
-        "error": "insufficient_history"
+        "price": 234.86,
+        "rsi": 38.96,
+        "ma200": 200.7,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "NBIS",
-        "error": "insufficient_history"
+        "price": 204.09,
+        "rsi": 46.06,
+        "ma200": 153.45,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "CLS",
-        "error": "insufficient_history"
+        "price": 277.77,
+        "rsi": 37.45,
+        "ma200": 328.05,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRDO",
-        "error": "insufficient_history"
+        "price": 165.22,
+        "rsi": 31.78,
+        "ma200": 175.13,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MRVL",
-        "error": "insufficient_history"
+        "price": 206.48,
+        "rsi": 43.82,
+        "ma200": 150.4,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "ANET",
-        "error": "insufficient_history"
+        "price": 186.1,
+        "rsi": 47.43,
+        "ma200": 151.31,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "ETN",
-        "error": "insufficient_history"
+        "price": 390.85,
+        "rsi": 37.09,
+        "ma200": 378.64,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "LRCX",
-        "error": "insufficient_history"
+        "price": 288.32,
+        "rsi": 39.9,
+        "ma200": 259.15,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "CBRS",
@@ -120,31 +228,59 @@
       },
       {
         "ticker": "AMKR",
-        "error": "insufficient_history"
+        "price": 47.17,
+        "rsi": 39.81,
+        "ma200": 55.77,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "COHR",
-        "error": "insufficient_history"
+        "price": 268.64,
+        "rsi": 41.38,
+        "ma200": 275.1,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TER",
-        "error": "insufficient_history"
+        "price": 341.62,
+        "rsi": 41.41,
+        "ma200": 314.4,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "GLW",
-        "error": "insufficient_history"
+        "price": 144.13,
+        "rsi": 41.77,
+        "ma200": 142.63,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "ORCL",
-        "error": "insufficient_history"
+        "price": 145.75,
+        "rsi": 50.72,
+        "ma200": 168.55,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AMAT",
-        "error": "insufficient_history"
+        "price": 438.46,
+        "rsi": 33.5,
+        "ma200": 404.09,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "TSLA",
-        "error": "insufficient_history"
+        "price": 357.01,
+        "rsi": 53.45,
+        "ma200": 399.97,
+        "above_200ma": false,
+        "buy_signal": false
       }
     ],
     "Tier 2 Semi Stock": [
@@ -154,71 +290,139 @@
       },
       {
         "ticker": "POET",
-        "error": "insufficient_history"
+        "price": 7.29,
+        "rsi": 40.54,
+        "ma200": 8.1,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CCJ",
-        "error": "insufficient_history"
+        "price": 96.38,
+        "rsi": 46.74,
+        "ma200": 105.19,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TXT",
-        "error": "insufficient_history"
+        "price": 79.24,
+        "rsi": 30.7,
+        "ma200": 90.03,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "A",
-        "error": "insufficient_history"
+        "price": 151.39,
+        "rsi": 55.26,
+        "ma200": 131.17,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "AA",
-        "error": "insufficient_history"
+        "price": 51.05,
+        "rsi": 52.7,
+        "ma200": 57.34,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SCCO",
-        "error": "insufficient_history"
+        "price": 204.26,
+        "rsi": 54.11,
+        "ma200": 175.32,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "TSLA",
-        "error": "insufficient_history"
+        "price": 357.01,
+        "rsi": 53.45,
+        "ma200": 399.97,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "EXE",
-        "error": "insufficient_history"
+        "price": 99.32,
+        "rsi": 64.74,
+        "ma200": 100.09,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "PLTR",
-        "error": "insufficient_history"
+        "price": 169.46,
+        "rsi": 52.2,
+        "ma200": 151.31,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SOFI",
-        "error": "insufficient_history"
+        "price": 17.84,
+        "rsi": 48.83,
+        "ma200": 20.06,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "HOOD",
-        "error": "insufficient_history"
+        "price": 106.99,
+        "rsi": 56.53,
+        "ma200": 95.05,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "RRX",
-        "error": "insufficient_history"
+        "price": 160.77,
+        "rsi": 35.33,
+        "ma200": 186.83,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "HUT",
-        "error": "insufficient_history"
+        "price": 80.68,
+        "rsi": 43.21,
+        "ma200": 74.59,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "KLAC",
-        "error": "insufficient_history"
+        "price": 172.26,
+        "rsi": 34.91,
+        "ma200": 170.51,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SYM",
-        "error": "insufficient_history"
+        "price": 39.87,
+        "rsi": 45.48,
+        "ma200": 52.68,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SMTC",
-        "error": "insufficient_history"
+        "price": 133.85,
+        "rsi": 50.84,
+        "ma200": 106.68,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "DDOG",
-        "error": "insufficient_history"
+        "price": 209.23,
+        "rsi": 36.26,
+        "ma200": 176.06,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SPCX",
@@ -226,47 +430,91 @@
       },
       {
         "ticker": "SIMO",
-        "error": "insufficient_history"
+        "price": 242.51,
+        "rsi": 46.33,
+        "ma200": 182.12,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SMCI",
-        "error": "insufficient_history"
+        "price": 37.0,
+        "rsi": 56.28,
+        "ma200": 31.33,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "QCOM",
-        "error": "insufficient_history"
+        "price": 169.96,
+        "rsi": 54.64,
+        "ma200": 167.0,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "CRWV",
-        "error": "insufficient_history"
+        "price": 80.93,
+        "rsi": 41.77,
+        "ma200": 91.36,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRCL",
-        "error": "insufficient_history"
+        "price": 88.64,
+        "rsi": 58.79,
+        "ma200": 84.87,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "QBTS",
-        "error": "insufficient_history"
+        "price": 16.49,
+        "rsi": 39.02,
+        "ma200": 21.58,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "STM",
-        "error": "insufficient_history"
+        "price": 50.71,
+        "rsi": 43.34,
+        "ma200": 44.94,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "COIN",
-        "error": "insufficient_history"
+        "price": 174.96,
+        "rsi": 53.31,
+        "ma200": 193.61,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "PENG",
-        "error": "insufficient_history"
+        "price": 47.59,
+        "rsi": 38.42,
+        "ma200": 36.3,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "CEG",
-        "error": "insufficient_history"
+        "price": 290.04,
+        "rsi": 64.03,
+        "ma200": 295.93,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SHOP",
-        "error": "insufficient_history"
+        "price": 141.87,
+        "rsi": 48.96,
+        "ma200": 131.28,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "DRAM",
@@ -274,141 +522,277 @@
       },
       {
         "ticker": "NOK",
-        "error": "insufficient_history"
+        "price": 9.84,
+        "rsi": 43.75,
+        "ma200": 9.57,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "IBM",
-        "error": "insufficient_history"
+        "price": 231.7,
+        "rsi": 47.34,
+        "ma200": 259.6,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NFLX",
-        "error": "insufficient_history"
+        "price": 82.73,
+        "rsi": 63.89,
+        "ma200": 87.19,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "USAR",
-        "error": "insufficient_history"
+        "price": 17.85,
+        "rsi": 48.65,
+        "ma200": 19.21,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IREN",
-        "error": "insufficient_history"
+        "price": 39.6,
+        "rsi": 48.63,
+        "ma200": 45.7,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "APLD",
-        "error": "insufficient_history"
+        "price": 24.91,
+        "rsi": 38.71,
+        "ma200": 32.17,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "RKLB",
-        "error": "insufficient_history"
+        "price": 63.1,
+        "rsi": 34.54,
+        "ma200": 79.28,
+        "above_200ma": false,
+        "buy_signal": false
       }
     ],
     "ETFs": [
       {
         "ticker": "QQQM",
-        "error": "insufficient_history"
+        "price": 292.02,
+        "rsi": 47.59,
+        "ma200": 269.92,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SOXL",
-        "error": "insufficient_history"
+        "price": 106.35,
+        "rsi": 39.08,
+        "ma200": 108.08,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPMO",
-        "error": "insufficient_history"
+        "price": 146.34,
+        "rsi": 45.59,
+        "ma200": 131.88,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "MGK",
-        "error": "insufficient_history"
+        "price": 89.28,
+        "rsi": 51.52,
+        "ma200": 83.35,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SOXX",
-        "error": "insufficient_history"
+        "price": 501.44,
+        "rsi": 41.44,
+        "ma200": 429.03,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "IWB",
-        "error": "insufficient_history"
+        "price": 418.43,
+        "rsi": 51.01,
+        "ma200": 388.23,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "KIE",
-        "error": "insufficient_history"
+        "price": 63.62,
+        "rsi": 50.28,
+        "ma200": 58.89,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "VDE",
-        "error": "insufficient_history"
+        "price": 183.61,
+        "rsi": 72.16,
+        "ma200": 153.11,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SCHD",
-        "error": "insufficient_history"
+        "price": 35.01,
+        "rsi": 64.55,
+        "ma200": 30.75,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "VHT",
-        "error": "insufficient_history"
+        "price": 324.47,
+        "rsi": 60.4,
+        "ma200": 288.21,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SPYM",
-        "error": "insufficient_history"
+        "price": 90.07,
+        "rsi": 52.03,
+        "ma200": 83.41,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "VFH",
-        "error": "insufficient_history"
+        "price": 140.86,
+        "rsi": 52.08,
+        "ma200": 129.94,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SLV",
-        "error": "insufficient_history"
+        "price": 59.07,
+        "rsi": 51.15,
+        "ma200": 65.17,
+        "above_200ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IBB",
-        "error": "insufficient_history"
+        "price": 213.8,
+        "rsi": 64.07,
+        "ma200": 176.97,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SMH",
-        "error": "insufficient_history"
+        "price": 550.48,
+        "rsi": 44.83,
+        "ma200": 475.09,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "MAGS",
-        "error": "insufficient_history"
+        "price": 68.76,
+        "rsi": 57.24,
+        "ma200": 65.11,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "XLK",
-        "error": "insufficient_history"
+        "price": 183.6,
+        "rsi": 49.5,
+        "ma200": 159.68,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "ISPY",
-        "error": "insufficient_history"
+        "price": 48.17,
+        "rsi": 51.1,
+        "ma200": 45.31,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "QQQI",
-        "error": "insufficient_history"
+        "price": 54.12,
+        "rsi": 49.69,
+        "ma200": 51.13,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "XLE",
-        "error": "insufficient_history"
+        "price": 65.1,
+        "rsi": 71.7,
+        "ma200": 54.18,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "IBIT",
-        "error": "insufficient_history"
+        "price": 43.79,
+        "rsi": 67.08,
+        "ma200": 42.45,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SPXL",
-        "error": "insufficient_history"
+        "price": 285.07,
+        "rsi": 50.22,
+        "ma200": 241.24,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "TQQQ",
-        "error": "insufficient_history"
+        "price": 69.6,
+        "rsi": 45.96,
+        "ma200": 61.15,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "GDX",
-        "error": "insufficient_history"
+        "price": 97.63,
+        "rsi": 57.84,
+        "ma200": 89.54,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "QQQ",
-        "error": "insufficient_history"
+        "price": 709.24,
+        "rsi": 47.62,
+        "ma200": 655.64,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "SPY",
-        "error": "insufficient_history"
+        "price": 765.16,
+        "rsi": 51.97,
+        "ma200": 708.78,
+        "above_200ma": true,
+        "buy_signal": false
       },
       {
         "ticker": "MTUM",
-        "error": "insufficient_history"
+        "price": 297.04,
+        "rsi": 40.37,
+        "ma200": 277.98,
+        "above_200ma": true,
+        "buy_signal": false
       }
     ]
   }
