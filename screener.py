@@ -4,7 +4,7 @@ Intraday stock screener.
 For every ticker in tickers.json, pulls ~1 year of daily price history
 (today's row updates live during market hours), computes RSI(14) and the
 350-day simple moving average, and flags a "BUY OPPORTUNITY" when RSI < 33
-AND price is above the 200-day MA.
+AND price is above the 350-day MA.
 
 Writes results to results.json, which the dashboard (index.html) reads.
 
