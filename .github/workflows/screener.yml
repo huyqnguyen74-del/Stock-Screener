@@ -2,24 +2,14 @@ name: Intraday Stock Screener
 
 on:
   schedule:
-    # Hourly heartbeat checkpoint on its own dedicated trigger: 13:30-19:30 UTC
-    # = 6:30am-12:30pm PDT (summer). This is the ONLY cron GitHub can match to
-    # identify "this is the hourly check" — see IS_HOURLY_CHECK below.
-    - cron: "30 13-19 * * 1-5"
-    # Remaining 15-minute checks (the :30 slot is handled by the line above)
-    - cron: "45 13 * * 1-5"            # 13:45 UTC
-    - cron: "0,15,45 14-19 * * 1-5"    # 14:00 through 19:45 UTC, skipping :30
-    - cron: "0 20 * * 1-5"             # 20:00 UTC (1:00pm PDT) — window close
-    # GitHub cron is always UTC and does not shift for daylight saving, so
-    # this whole window becomes 5:30am-12:00pm during PST (winter). Shift
-    # every hour value above by -1 in winter if you want it exact.
-  workflow_dispatch:
-    inputs:
-      force_hourly_check:
-        description: "Force this manual run to act as the hourly heartbeat check (for testing)"
-        required: false
-        default: false
-        type: boolean
+    # Every 15 minutes, 6:30am-1:00pm PDT (summer), Monday-Friday.
+    # GitHub cron is always UTC and does not shift for daylight saving,
+    # so this window becomes 5:30am-12:00pm during PST (winter).
+    # Shift every hour value below by -1 in winter if you want it exact.
+    - cron: "30,45 13 * * 1-5"        # 13:30, 13:45 UTC
+    - cron: "0,15,30,45 14-19 * * 1-5" # 14:00 through 19:45 UTC, every 15 min
+    - cron: "0 20 * * 1-5"             # 20:00 UTC (1:00pm PDT)
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab to test
 
 permissions:
   contents: write
@@ -44,7 +34,6 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-          IS_HOURLY_CHECK: ${{ (github.event.schedule == '30 13-19 * * 1-5') || (github.event.inputs.force_hourly_check == 'true') }}
         run: python screener.py
 
       - name: Commit and push results
