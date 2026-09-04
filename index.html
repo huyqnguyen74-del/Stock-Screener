@@ -194,7 +194,7 @@
 
 <header>
   <div class="title-row">
-    <h1>Daily Screener <span>//</span> RSI &lt; 32 &amp; Price &gt; 200MA</h1>
+    <h1>Daily Screener <span>//</span> <span id="criteria-title">RSI &lt; 32 &amp; Price &gt; 200MA</span></h1>
     <div class="meta" id="last-updated">Loading last run…</div>
   </div>
 </header>
@@ -314,7 +314,7 @@ function render(){
       </div>
       <table>
         <thead><tr>
-          <th>Ticker</th><th class="num">Price</th><th class="num">RSI(14)</th><th class="num">200 MA</th><th>Signal</th>
+          <th>Ticker</th><th class="num">Price</th><th class="num">RSI(14)</th><th class="num ma-col-header">200 MA</th><th>Signal</th>
         </tr></thead>
         <tbody>
           ${sorted.map(i => rowHtml(i, category)).join('')}
@@ -327,7 +327,7 @@ function render(){
 
   const tape = document.getElementById('tape');
   if(buyTickers.length === 0){
-    tape.innerHTML = '<span class="empty">No buy signals today — nothing under RSI 32 while above its 200-day MA.</span>';
+    tape.innerHTML = `<span class="empty">No buy signals today — nothing under RSI ${RESULTS.rsi_threshold} while above its ${RESULTS.ma_period}-day MA.</span>`;
   } else {
     const list = buyTickers.map(t => `<span>▲ ${t} — BUY OPPORTUNITY</span>`).join('');
     tape.innerHTML = list + list; // duplicated for seamless scroll
@@ -345,6 +345,8 @@ fetch('./results.json?_=' + Date.now())
     RESULTS = data;
     const d = new Date(data.generated_at);
     document.getElementById('last-updated').textContent = 'Last run: ' + d.toLocaleString();
+    document.getElementById('criteria-title').textContent = `RSI < ${data.rsi_threshold} & Price > ${data.ma_period}MA`;
+    document.querySelectorAll('.ma-col-header').forEach(el => el.textContent = `${data.ma_period} MA`);
     render();
   })
   .catch(err => {
