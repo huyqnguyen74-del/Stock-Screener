@@ -3,7 +3,7 @@ Intraday stock screener.
 
 For every ticker in tickers.json, pulls ~1 year of daily price history
 (today's row updates live during market hours), computes RSI(14) and the
-200-day simple moving average, and flags a "BUY OPPORTUNITY" when RSI < 32
+350-day simple moving average, and flags a "BUY OPPORTUNITY" when RSI < 33
 AND price is above the 200-day MA.
 
 Writes results to results.json, which the dashboard (index.html) reads.
@@ -26,8 +26,8 @@ import pandas as pd
 import yfinance as yf
 
 RSI_PERIOD = 14
-MA_PERIOD = 200
-RSI_BUY_THRESHOLD = 32
+MA_PERIOD = 350
+RSI_BUY_THRESHOLD = 33
 
 NOTIFIED_FILE = "notified.json"
 
