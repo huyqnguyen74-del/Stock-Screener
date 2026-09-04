@@ -13,10 +13,6 @@ suppresses repeat emails while a signal stays continuously active between
 checks — if it drops out and later re-qualifies the same day, that's treated
 as a fresh occurrence and you'll be emailed again. State resets each trading
 day (notified.json).
-
-Additionally sends a lightweight "no buy opportunities" status email once an
-hour (at :30 past the hour, matching a 6:30am start) whenever nothing
-currently qualifies — a simple heartbeat confirming the screener is alive.
 """
 
 import json
@@ -25,7 +21,6 @@ import smtplib
 import sys
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
-from zoneinfo import ZoneInfo
 
 import pandas as pd
 import yfinance as yf
@@ -35,7 +30,6 @@ MA_PERIOD = 200
 RSI_BUY_THRESHOLD = 32
 
 NOTIFIED_FILE = "notified.json"
-PACIFIC = ZoneInfo("America/Los_Angeles")
 
 
 def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
@@ -54,7 +48,10 @@ def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
 
 def analyze_ticker(ticker: str) -> dict | None:
     try:
-        hist = yf.Ticker(ticker).history(period="1y", interval="1d", auto_adjust=True)
+        # Pull enough calendar history to cover MA_PERIOD trading days,
+        # plus a comfortable buffer — trading days are ~69% of calendar days.
+        years_needed = max(1, (MA_PERIOD // 200) + 1)
+        hist = yf.Ticker(ticker).history(period=f"{years_needed}y", interval="1d", auto_adjust=True)
         if hist.empty or len(hist) < MA_PERIOD:
             print(f"[skip] {ticker}: not enough history ({len(hist)} rows)")
             return {"ticker": ticker, "error": "insufficient_history"}
@@ -112,7 +109,7 @@ def send_email(new_signals: list[dict]):
     for s in new_signals:
         lines.append(
             f"  {s['ticker']} ({s['category']}) — price ${s['price']:.2f}, "
-            f"RSI {s['rsi']:.1f}, 200MA ${s['ma200']:.2f}"
+            f"RSI {s['rsi']:.1f}, {MA_PERIOD}MA ${s['ma200']:.2f}"
         )
     lines.append("\nDashboard: (your GitHub Pages URL)")
     body = "\n".join(lines)
@@ -132,43 +129,18 @@ def send_email(new_signals: list[dict]):
         print(f"[email] Failed to send: {e}", file=sys.stderr)
 
 
-def send_status_email(pt_time_str: str):
-    gmail_address = os.environ.get("GMAIL_ADDRESS")
-    gmail_app_password = os.environ.get("GMAIL_APP_PASSWORD")
-    notify_email = os.environ.get("NOTIFY_EMAIL", gmail_address)
-
-    if not gmail_address or not gmail_app_password:
-        print("[email] Status email skipped: GMAIL_ADDRESS / GMAIL_APP_PASSWORD not set", file=sys.stderr)
-        return
-
-    body = (
-        f"Hourly check at {pt_time_str} PT: no tickers currently meet the "
-        f"RSI < {RSI_BUY_THRESHOLD} & above-200MA criteria.\n\n"
-        "This is just a confirmation the screener is running — no action needed."
-    )
-
-    msg = MIMEText(body)
-    msg["Subject"] = f"Stock Screener: no buy opportunities as of {pt_time_str} PT"
-    msg["From"] = gmail_address
-    msg["To"] = notify_email
-
-    try:
-        with smtplib.SMTP("smtp.gmail.com", 587) as server:
-            server.starttls()
-            server.login(gmail_address, gmail_app_password)
-            server.sendmail(gmail_address, [notify_email], msg.as_string())
-        print(f"[email] Sent hourly status email ({pt_time_str} PT, no signals)")
-    except Exception as e:
-        print(f"[email] Failed to send status email: {e}", file=sys.stderr)
-
-
 def main():
     with open("tickers.json") as f:
         categories = json.load(f)["categories"]
 
     now = datetime.now(timezone.utc)
     today = now.strftime("%Y-%m-%d")
-    results = {"generated_at": now.isoformat(), "categories": {}}
+    results = {
+        "generated_at": now.isoformat(),
+        "rsi_threshold": RSI_BUY_THRESHOLD,
+        "ma_period": MA_PERIOD,
+        "categories": {},
+    }
 
     all_buy_signals = []  # every currently-active signal, across categories
 
@@ -198,16 +170,6 @@ def main():
         send_email(new_signals)
 
     save_notified(today, current_tickers)  # this run's state becomes the baseline for the next check
-
-    # --- hourly "all clear" status email (6:30, 7:30, ... 12:30 PT) ---
-    # Driven by an explicit signal from the workflow (IS_HOURLY_CHECK), not
-    # by checking the wall clock — GitHub's scheduled runs can start a few
-    # minutes late, so a strict "is it :30 right now" check is unreliable.
-    is_hourly_checkpoint = os.environ.get("IS_HOURLY_CHECK", "false").lower() == "true"
-    if is_hourly_checkpoint and not current_tickers:
-        pt_now = now.astimezone(PACIFIC)
-        send_status_email(pt_now.strftime("%-I:%M%p"))
-
     print("Done.")
 
 
