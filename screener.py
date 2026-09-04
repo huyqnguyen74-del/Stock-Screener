@@ -26,8 +26,8 @@ import pandas as pd
 import yfinance as yf
 
 RSI_PERIOD = 14
-MA_PERIOD = 350
-RSI_BUY_THRESHOLD = 33
+MA_PERIOD = 200
+RSI_BUY_THRESHOLD = 32
 
 NOTIFIED_FILE = "notified.json"
 
@@ -67,8 +67,8 @@ def analyze_ticker(ticker: str) -> dict | None:
             "ticker": ticker,
             "price": round(price, 2),
             "rsi": round(rsi, 2),
-            "ma200": round(ma200, 2),
-            "above_200ma": price > ma200,
+            "ma": round(ma200, 2),
+            "above_ma": price > ma200,
             "buy_signal": buy_signal,
         }
     except Exception as e:
@@ -109,7 +109,7 @@ def send_email(new_signals: list[dict]):
     for s in new_signals:
         lines.append(
             f"  {s['ticker']} ({s['category']}) — price ${s['price']:.2f}, "
-            f"RSI {s['rsi']:.1f}, {MA_PERIOD}MA ${s['ma200']:.2f}"
+            f"RSI {s['rsi']:.1f}, {MA_PERIOD}MA ${s['ma']:.2f}"
         )
     lines.append("\nDashboard: (your GitHub Pages URL)")
     body = "\n".join(lines)
