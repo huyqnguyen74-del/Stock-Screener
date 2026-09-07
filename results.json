@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T16:17:43.138939+00:00",
+  "generated_at": "2026-09-07T16:21:31.190644+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -283,6 +283,194 @@
         "ma": 380.51,
         "above_ma": false,
         "buy_signal": false
+      },
+      {
+        "ticker": "MSFT",
+        "price": 499.7,
+        "rsi": 59.6,
+        "ma": 453.07,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "INTC",
+        "price": 95.8,
+        "rsi": 51.74,
+        "ma": 53.55,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "ABBV",
+        "price": 256.46,
+        "rsi": 50.34,
+        "ma": 213.2,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "COST",
+        "price": 915.74,
+        "rsi": 38.15,
+        "ma": 958.92,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "CAT",
+        "price": 813.94,
+        "rsi": 45.48,
+        "ma": 619.37,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "UNH",
+        "price": 397.14,
+        "rsi": 46.82,
+        "ma": 336.85,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "DH",
+        "price": 1.05,
+        "rsi": 75.69,
+        "ma": 2.29,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "ANET",
+        "price": 193.78,
+        "rsi": 53.25,
+        "ma": 137.84,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "TXN",
+        "price": 258.44,
+        "rsi": 41.64,
+        "ma": 212.56,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "CRWD",
+        "price": 213.1,
+        "rsi": 53.12,
+        "ma": 131.48,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "SCHW",
+        "price": 109.29,
+        "rsi": 53.51,
+        "ma": 94.01,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "ABT",
+        "price": 108.33,
+        "rsi": 47.4,
+        "ma": 115.03,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "BA",
+        "price": 212.25,
+        "rsi": 44.12,
+        "ma": 216.5,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "GLW",
+        "price": 154.3,
+        "rsi": 50.17,
+        "ma": 108.98,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "TT",
+        "price": 447.9,
+        "rsi": 43.26,
+        "ma": 430.91,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "CSX",
+        "price": 49.41,
+        "rsi": 43.79,
+        "ma": 38.54,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "LITE",
+        "price": 881.26,
+        "rsi": 51.78,
+        "ma": 443.93,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "RCL",
+        "price": 265.19,
+        "rsi": 25.61,
+        "ma": 287.54,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "HON",
+        "price": 209.61,
+        "rsi": 34.85,
+        "ma": 220.33,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "XYZ",
+        "price": 82.76,
+        "rsi": 53.4,
+        "ma": 68.94,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "VST",
+        "price": 149.3,
+        "rsi": 57.5,
+        "ma": 167.69,
+        "above_ma": false,
+        "buy_signal": false
+      },
+      {
+        "ticker": "ABNB",
+        "price": 181.94,
+        "rsi": 56.33,
+        "ma": 134.47,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "HOOD",
+        "price": 122.11,
+        "rsi": 65.94,
+        "ma": 96.98,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "",
+        "error": "Empty ticker name"
       }
     ],
     "Tier 2 Semi Stock": [
@@ -789,6 +977,22 @@
         "price": 304.86,
         "rsi": 49.65,
         "ma": 260.93,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "IWM",
+        "price": 296.01,
+        "rsi": 48.16,
+        "ma": 250.45,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "DGRO",
+        "price": 79.13,
+        "rsi": 50.92,
+        "ma": 69.1,
         "above_ma": true,
         "buy_signal": false
       }
