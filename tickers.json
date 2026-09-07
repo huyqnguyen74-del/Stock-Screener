@@ -5,14 +5,14 @@
       "MU", "AVGO", "AMD", "VRT", "MSFT", "GOOGL", "AAPL", "INTC", "NVDA", "AMZN",
       "ARM", "NBIS", "CLS", "CRDO", "MRVL", "ANET", "ETN", "LRCX", "CBRS", "AMKR",
       "COHR", "TER", "GLW", "ORCL", "AMAT", "TSLA", "MSFT", "INTC", "ABBV","COST","CAT",
-      "UNH", "DH", "ANET", "TXN", "CRWD", "SCHW", "ABT", "BA", "GLW", "TT", "CSX", "LITE",
-      "RCL", "HON", "XYZ", "VST", "ABNB", "HOOD", "ADI", "CDNS",
+      "UNH", "DH", "ANET", "TXN", "CRWD", "SCHW", "ABT", "BA", "GLW", "TT", "CSX", "LITE"
+      "RCL", "HON", "XYZ", "VST", "ABNB", "HOOD", "ADI", "CDNS"
       
-    ],
-    "Tier 2 Semi Stock": 
+    ],    
+    "Tier 2 Semi Stock": [
       "QNT", "POET", "CCJ","TXT", "A", "AA", "SCCO", "TSLA", "EXE", "PLTR", "SOFI",
       "HOOD", "RRX", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI",
-      "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG", "SHOP", "DRAM",
+      "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG", "SHOP", "DRAM"
       "NOK", "IBM", "NFLX", "USAR", "IREN", "APLD","RKLB"
     ],
     "ETFs": [
