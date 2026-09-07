@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T20:06:28.078745+00:00",
+  "generated_at": "2026-09-07T22:59:16.598401+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -285,22 +285,6 @@
         "buy_signal": false
       },
       {
-        "ticker": "MSFT",
-        "price": 499.7,
-        "rsi": 59.6,
-        "ma": 453.07,
-        "above_ma": true,
-        "buy_signal": false
-      },
-      {
-        "ticker": "INTC",
-        "price": 95.8,
-        "rsi": 51.74,
-        "ma": 53.55,
-        "above_ma": true,
-        "buy_signal": false
-      },
-      {
         "ticker": "ABBV",
         "price": 256.46,
         "rsi": 50.34,
@@ -341,14 +325,6 @@
         "buy_signal": false
       },
       {
-        "ticker": "ANET",
-        "price": 193.78,
-        "rsi": 53.25,
-        "ma": 137.84,
-        "above_ma": true,
-        "buy_signal": false
-      },
-      {
         "ticker": "TXN",
         "price": 258.44,
         "rsi": 41.64,
@@ -386,14 +362,6 @@
         "rsi": 44.12,
         "ma": 216.5,
         "above_ma": false,
-        "buy_signal": false
-      },
-      {
-        "ticker": "GLW",
-        "price": 154.3,
-        "rsi": 50.17,
-        "ma": 108.98,
-        "above_ma": true,
         "buy_signal": false
       },
       {
@@ -469,8 +437,20 @@
         "buy_signal": false
       },
       {
-        "ticker": "",
-        "error": "Empty ticker name"
+        "ticker": "ADI",
+        "price": 362.25,
+        "rsi": 43.35,
+        "ma": 295.03,
+        "above_ma": true,
+        "buy_signal": false
+      },
+      {
+        "ticker": "CDNS",
+        "price": 292.7,
+        "rsi": 31.05,
+        "ma": 326.57,
+        "above_ma": false,
+        "buy_signal": false
       }
     ],
     "Tier 2 Semi Stock": [
