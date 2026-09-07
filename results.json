@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T22:44:54.835201+00:00",
+  "generated_at": "2026-09-07T13:39:03.731289+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -14,8 +14,8 @@
       },
       {
         "ticker": "IFNNY",
-        "price": 66.17,
-        "rsi": 44.95,
+        "price": 66.23,
+        "rsi": 45.1,
         "ma": 51.76,
         "above_ma": true,
         "buy_signal": false
@@ -90,7 +90,7 @@
       },
       {
         "ticker": "AVGO",
-        "price": 357.89,
+        "price": 357.9,
         "rsi": 38.05,
         "ma": 333.83,
         "above_ma": true,
@@ -123,8 +123,8 @@
       {
         "ticker": "GOOGL",
         "price": 338.46,
-        "rsi": 44.82,
-        "ma": 280.13,
+        "rsi": 44.97,
+        "ma": 279.95,
         "above_ma": true,
         "buy_signal": false
       },
@@ -247,8 +247,8 @@
       {
         "ticker": "TER",
         "price": 357.03,
-        "rsi": 46.88,
-        "ma": 227.8,
+        "rsi": 46.92,
+        "ma": 227.71,
         "above_ma": true,
         "buy_signal": false
       },
@@ -333,8 +333,8 @@
       {
         "ticker": "SCCO",
         "price": 198.76,
-        "rsi": 49.94,
-        "ma": 143.38,
+        "rsi": 50.28,
+        "ma": 141.44,
         "above_ma": true,
         "buy_signal": false
       },
@@ -412,7 +412,7 @@
       },
       {
         "ticker": "SMTC",
-        "price": 147.88,
+        "price": 147.89,
         "rsi": 58.68,
         "ma": 83.49,
         "above_ma": true,
