@@ -16,6 +16,9 @@
     --buy:#1F7A4D;
     --buy-bg:#E7F5EC;
     --buy-border:#BFE3CD;
+    --watch:#92610A;
+    --watch-bg:#FBF0DA;
+    --watch-border:#F0D9A6;
     --top-semi:#4C51BF;
     --tier2-semi:#B7791F;
     --etf:#0F766E;
@@ -118,6 +121,7 @@
   }
   tbody tr:last-child td{ border-bottom:none; }
   tbody tr.buy{ background:var(--buy-bg); }
+  tbody tr.watch{ background:var(--watch-bg); }
   .ticker{ font-weight:600; }
   .badge{
     display:inline-block;
@@ -126,6 +130,16 @@
     letter-spacing:0.03em;
     color:#fff;
     background:var(--buy);
+    padding:2px 7px;
+    border-radius:4px;
+  }
+  .watch-badge{
+    display:inline-block;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    color:#fff;
+    background:var(--watch);
     padding:2px 7px;
     border-radius:4px;
   }
@@ -275,12 +289,20 @@ function rowHtml(item, category){
     return `<tr><td class="ticker">${item.ticker}</td><td colspan="4" class="err">Unavailable — ${item.error}</td></tr>`;
   }
   const buy = item.buy_signal;
-  return `<tr class="${buy ? 'buy' : ''}">
+  const watchOnly = item.rsi_oversold && !buy;
+  const rowClass = buy ? 'buy' : (watchOnly ? 'watch' : '');
+  let signalHtml = '';
+  if(buy){
+    signalHtml = '<span class="badge">BUY OPPORTUNITY</span>';
+  } else if(watchOnly){
+    signalHtml = '<span class="watch-badge">RSI OVERSOLD</span>';
+  }
+  return `<tr class="${rowClass}">
     <td class="ticker">${item.ticker}</td>
     <td class="num">$${item.price.toFixed(2)}</td>
     <td class="num">${item.rsi.toFixed(1)}</td>
     <td class="num">$${item.ma.toFixed(2)}</td>
-    <td>${buy ? '<span class="badge">BUY OPPORTUNITY</span>' : ''}</td>
+    <td>${signalHtml}</td>
   </tr>`;
 }
 
@@ -294,9 +316,9 @@ function render(){
 
   Object.entries(RESULTS.categories).forEach(([category, items]) => {
     const sorted = [...items].sort((a,b) => {
-      const aBuy = a.buy_signal ? 1 : 0;
-      const bBuy = b.buy_signal ? 1 : 0;
-      if(aBuy !== bBuy) return bBuy - aBuy;
+      const rank = (x) => x.buy_signal ? 2 : (x.rsi_oversold ? 1 : 0);
+      const diff = rank(b) - rank(a);
+      if(diff !== 0) return diff;
       return a.ticker.localeCompare(b.ticker);
     });
 
