@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-09-09T13:39:32.475330+00:00",
+  "generated_at": "2026-09-09T13:52:40.651228+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
     "Top Semi Stock": [
       {
         "ticker": "APP",
-        "price": 307.76,
-        "rsi": 37.2,
+        "price": 309.84,
+        "rsi": 37.89,
         "ma": 471.81,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "IFNNY",
-        "price": 67.17,
-        "rsi": 47.53,
-        "ma": 51.86,
+        "price": 66.13,
+        "rsi": 45.15,
+        "ma": 51.97,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "BE",
-        "price": 277.91,
-        "rsi": 69.46,
+        "price": 278.52,
+        "rsi": 69.6,
         "ma": 133.04,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "JBL",
-        "price": 313.32,
-        "rsi": 46.51,
+        "price": 312.42,
+        "rsi": 45.95,
         "ma": 253.31,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IBM",
-        "price": 233.92,
-        "rsi": 49.61,
+        "price": 232.26,
+        "rsi": 47.8,
         "ma": 260.17,
         "above_ma": false,
         "buy_signal": false
@@ -50,135 +50,135 @@
       },
       {
         "ticker": "TSM",
-        "price": 437.98,
-        "rsi": 60.98,
+        "price": 437.1,
+        "rsi": 60.33,
         "ma": 314.75,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "META",
-        "price": 646.47,
-        "rsi": 69.07,
+        "price": 647.89,
+        "rsi": 69.35,
         "ma": 651.74,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "SNDK",
-        "price": 1737.67,
-        "rsi": 61.09,
-        "ma": 617.25,
+        "price": 1763.01,
+        "rsi": 62.19,
+        "ma": 617.32,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "WDC",
-        "price": 482.5,
-        "rsi": 51.64,
-        "ma": 251.11,
+        "price": 484.39,
+        "rsi": 52.05,
+        "ma": 251.12,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MU",
-        "price": 1003.49,
-        "rsi": 58.03,
-        "ma": 410.28,
+        "price": 1024.42,
+        "rsi": 60.28,
+        "ma": 410.34,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "AVGO",
-        "price": 364.06,
-        "rsi": 43.04,
+        "price": 362.57,
+        "rsi": 42.33,
         "ma": 334.92,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "AMD",
-        "price": 515.24,
-        "rsi": 59.2,
-        "ma": 266.1,
+        "price": 523.47,
+        "rsi": 60.91,
+        "ma": 266.12,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "VRT",
-        "price": 284.38,
-        "rsi": 55.6,
-        "ma": 205.09,
+        "price": 279.86,
+        "rsi": 53.35,
+        "ma": 205.08,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MSFT",
-        "price": 493.54,
-        "rsi": 55.93,
+        "price": 492.0,
+        "rsi": 55.02,
         "ma": 453.75,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "GOOGL",
-        "price": 330.05,
-        "rsi": 39.11,
+        "price": 329.11,
+        "rsi": 38.54,
         "ma": 280.98,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "AAPL",
-        "price": 315.77,
-        "rsi": 49.82,
+        "price": 316.26,
+        "rsi": 50.29,
         "ma": 259.13,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "INTC",
-        "price": 104.18,
-        "rsi": 61.24,
+        "price": 105.0,
+        "rsi": 62.21,
         "ma": 54.04,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "NVDA",
-        "price": 225.99,
-        "rsi": 56.34,
+        "price": 224.72,
+        "rsi": 55.23,
         "ma": 182.48,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "AMZN",
-        "price": 253.16,
-        "rsi": 44.69,
+        "price": 252.07,
+        "rsi": 43.79,
         "ma": 230.6,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ARM",
-        "price": 272.89,
-        "rsi": 56.85,
+        "price": 272.2,
+        "rsi": 56.59,
         "ma": 177.7,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "NBIS",
-        "price": 246.49,
-        "rsi": 59.18,
+        "price": 245.71,
+        "rsi": 58.98,
         "ma": 119.1,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CLS",
-        "price": 340.63,
+        "price": 340.61,
         "rsi": 57.18,
         "ma": 270.93,
         "above_ma": true,
@@ -186,41 +186,41 @@
       },
       {
         "ticker": "CRDO",
-        "price": 167.99,
-        "rsi": 33.7,
+        "price": 167.8,
+        "rsi": 33.61,
         "ma": 147.41,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MRVL",
-        "price": 232.52,
-        "rsi": 54.63,
-        "ma": 119.12,
+        "price": 238.04,
+        "rsi": 56.6,
+        "ma": 119.14,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ANET",
-        "price": 195.48,
-        "rsi": 54.54,
+        "price": 195.54,
+        "rsi": 54.58,
         "ma": 138.54,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ETN",
-        "price": 420.4,
-        "rsi": 52.36,
+        "price": 418.95,
+        "rsi": 51.67,
         "ma": 365.42,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "LRCX",
-        "price": 318.69,
-        "rsi": 53.15,
-        "ma": 196.26,
+        "price": 316.3,
+        "rsi": 52.14,
+        "ma": 196.25,
         "above_ma": true,
         "buy_signal": false
       },
@@ -230,144 +230,144 @@
       },
       {
         "ticker": "AMKR",
-        "price": 51.4,
-        "rsi": 48.54,
+        "price": 51.83,
+        "rsi": 49.32,
         "ma": 42.38,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "COHR",
-        "price": 307.45,
-        "rsi": 53.12,
+        "price": 307.17,
+        "rsi": 53.05,
         "ma": 201.23,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "TER",
-        "price": 378.93,
-        "rsi": 53.31,
+        "price": 376.54,
+        "rsi": 52.66,
         "ma": 229.44,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "GLW",
-        "price": 169.13,
-        "rsi": 59.59,
+        "price": 168.63,
+        "rsi": 59.32,
         "ma": 109.7,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ORCL",
-        "price": 162.58,
-        "rsi": 63.47,
+        "price": 162.76,
+        "rsi": 63.59,
         "ma": 192.58,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "AMAT",
-        "price": 471.49,
-        "rsi": 45.1,
-        "ma": 312.72,
+        "price": 466.85,
+        "rsi": 43.96,
+        "ma": 312.71,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "TSLA",
-        "price": 371.47,
-        "rsi": 56.78,
-        "ma": 381.2,
+        "price": 372.17,
+        "rsi": 57.0,
+        "ma": 381.21,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "ABBV",
-        "price": 248.7,
-        "rsi": 41.71,
-        "ma": 213.66,
+        "price": 250.8,
+        "rsi": 44.47,
+        "ma": 213.67,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "COST",
-        "price": 904.32,
-        "rsi": 34.71,
-        "ma": 958.59,
+        "price": 905.31,
+        "rsi": 34.99,
+        "ma": 958.6,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "CAT",
-        "price": 821.66,
-        "rsi": 47.74,
+        "price": 819.73,
+        "rsi": 47.22,
         "ma": 622.43,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "UNH",
-        "price": 392.14,
-        "rsi": 43.44,
-        "ma": 335.89,
+        "price": 379.13,
+        "rsi": 36.32,
+        "ma": 335.85,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "DH",
-        "price": 1.04,
-        "rsi": 72.28,
+        "price": 1.03,
+        "rsi": 71.98,
         "ma": 2.28,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "TXN",
-        "price": 259.74,
-        "rsi": 42.98,
+        "price": 259.34,
+        "rsi": 42.56,
         "ma": 213.22,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CRWD",
-        "price": 210.68,
-        "rsi": 51.96,
-        "ma": 132.13,
+        "price": 208.71,
+        "rsi": 51.01,
+        "ma": 132.12,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SCHW",
-        "price": 106.8,
-        "rsi": 46.3,
+        "price": 106.74,
+        "rsi": 46.13,
         "ma": 94.19,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ABT",
-        "price": 105.1,
-        "rsi": 39.87,
+        "price": 105.92,
+        "rsi": 42.0,
         "ma": 114.92,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "BA",
-        "price": 211.53,
-        "rsi": 43.62,
+        "price": 211.46,
+        "rsi": 43.5,
         "ma": 216.81,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "TT",
-        "price": 443.45,
-        "rsi": 40.57,
+        "price": 442.24,
+        "rsi": 39.88,
         "ma": 431.54,
         "above_ma": true,
         "buy_signal": false
@@ -382,73 +382,73 @@
       },
       {
         "ticker": "LITE",
-        "price": 996.08,
-        "rsi": 60.54,
-        "ma": 449.27,
+        "price": 1003.16,
+        "rsi": 61.0,
+        "ma": 449.29,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "RCL",
-        "price": 260.92,
-        "rsi": 23.39,
+        "price": 260.29,
+        "rsi": 23.09,
         "ma": 287.96,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "HON",
-        "price": 207.05,
-        "rsi": 32.73,
+        "price": 206.48,
+        "rsi": 32.27,
         "ma": 220.44,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "XYZ",
-        "price": 78.07,
-        "rsi": 43.6,
-        "ma": 69.08,
+        "price": 78.76,
+        "rsi": 44.87,
+        "ma": 69.09,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "VST",
-        "price": 150.54,
-        "rsi": 58.27,
-        "ma": 167.9,
+        "price": 149.9,
+        "rsi": 57.25,
+        "ma": 167.89,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "ABNB",
-        "price": 170.07,
-        "rsi": 43.17,
+        "price": 170.43,
+        "rsi": 43.49,
         "ma": 134.81,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "HOOD",
-        "price": 118.69,
-        "rsi": 61.69,
+        "price": 118.78,
+        "rsi": 61.75,
         "ma": 97.41,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ADI",
-        "price": 364.95,
-        "rsi": 45.82,
-        "ma": 296.12,
+        "price": 363.64,
+        "rsi": 44.62,
+        "ma": 296.11,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CDNS",
-        "price": 285.06,
-        "rsi": 29.08,
-        "ma": 326.7,
+        "price": 282.2,
+        "rsi": 27.76,
+        "ma": 326.69,
         "above_ma": false,
         "buy_signal": false
       }
@@ -460,136 +460,136 @@
       },
       {
         "ticker": "POET",
-        "price": 8.15,
-        "rsi": 50.76,
+        "price": 8.24,
+        "rsi": 51.79,
         "ma": 7.0,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CCJ",
-        "price": 101.62,
-        "rsi": 55.3,
-        "ma": 91.8,
+        "price": 100.47,
+        "rsi": 53.03,
+        "ma": 91.79,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "TXT",
-        "price": 79.31,
-        "rsi": 32.4,
+        "price": 79.12,
+        "rsi": 31.94,
         "ma": 85.31,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "A",
-        "price": 144.77,
-        "rsi": 43.16,
+        "price": 144.75,
+        "rsi": 43.13,
         "ma": 127.47,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "AA",
-        "price": 52.21,
-        "rsi": 55.84,
+        "price": 51.22,
+        "rsi": 52.76,
         "ma": 46.19,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SCCO",
-        "price": 209.9,
-        "rsi": 58.21,
+        "price": 208.91,
+        "rsi": 57.57,
         "ma": 142.19,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "TSLA",
-        "price": 371.47,
-        "rsi": 56.78,
-        "ma": 381.2,
+        "price": 372.17,
+        "rsi": 57.0,
+        "ma": 381.21,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "EXE",
-        "price": 97.61,
-        "rsi": 56.51,
+        "price": 97.51,
+        "rsi": 56.1,
         "ma": 101.25,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "PLTR",
-        "price": 170.3,
-        "rsi": 51.3,
+        "price": 169.2,
+        "rsi": 50.51,
         "ma": 152.76,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SOFI",
-        "price": 17.82,
-        "rsi": 48.29,
+        "price": 17.73,
+        "rsi": 47.65,
         "ma": 20.58,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "HOOD",
-        "price": 118.69,
-        "rsi": 61.69,
+        "price": 118.78,
+        "rsi": 61.75,
         "ma": 97.41,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "RRX",
-        "price": 163.38,
-        "rsi": 38.87,
-        "ma": 166.78,
+        "price": 161.46,
+        "rsi": 37.18,
+        "ma": 166.77,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "HUT",
-        "price": 101.0,
-        "rsi": 59.61,
+        "price": 99.86,
+        "rsi": 58.85,
         "ma": 54.78,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "KLAC",
-        "price": 185.86,
-        "rsi": 47.7,
-        "ma": 137.91,
+        "price": 184.06,
+        "rsi": 46.43,
+        "ma": 137.9,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SYM",
-        "price": 43.3,
-        "rsi": 56.32,
+        "price": 42.8,
+        "rsi": 54.44,
         "ma": 50.16,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "SMTC",
-        "price": 166.68,
-        "rsi": 66.56,
+        "price": 166.0,
+        "rsi": 66.31,
         "ma": 84.28,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "DDOG",
-        "price": 214.3,
-        "rsi": 40.17,
+        "price": 213.35,
+        "rsi": 39.6,
         "ma": 159.62,
         "above_ma": true,
         "buy_signal": false
@@ -600,33 +600,33 @@
       },
       {
         "ticker": "SIMO",
-        "price": 274.25,
-        "rsi": 56.46,
+        "price": 272.99,
+        "rsi": 56.11,
         "ma": 138.32,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SMCI",
-        "price": 39.36,
-        "rsi": 60.64,
+        "price": 39.75,
+        "rsi": 62.11,
         "ma": 37.33,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "QCOM",
-        "price": 179.48,
-        "rsi": 64.91,
-        "ma": 161.19,
+        "price": 176.59,
+        "rsi": 62.47,
+        "ma": 161.18,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CRWV",
-        "price": 99.39,
-        "rsi": 60.84,
-        "ma": 101.09,
+        "price": 100.15,
+        "rsi": 61.63,
+        "ma": 101.1,
         "above_ma": false,
         "buy_signal": false
       },
@@ -636,48 +636,48 @@
       },
       {
         "ticker": "QBTS",
-        "price": 17.33,
-        "rsi": 44.5,
+        "price": 17.34,
+        "rsi": 44.52,
         "ma": 20.73,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "STM",
-        "price": 51.69,
-        "rsi": 46.3,
+        "price": 51.74,
+        "rsi": 46.44,
         "ma": 37.4,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "COIN",
-        "price": 181.64,
-        "rsi": 54.64,
-        "ma": 241.41,
+        "price": 180.94,
+        "rsi": 54.33,
+        "ma": 241.4,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "PENG",
-        "price": 52.07,
-        "rsi": 47.56,
+        "price": 51.97,
+        "rsi": 47.36,
         "ma": 30.53,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "CEG",
-        "price": 296.99,
-        "rsi": 64.76,
-        "ma": 304.56,
+        "price": 295.4,
+        "rsi": 63.19,
+        "ma": 304.55,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "SHOP",
-        "price": 131.4,
-        "rsi": 39.95,
+        "price": 131.37,
+        "rsi": 39.93,
         "ma": 130.99,
         "above_ma": true,
         "buy_signal": false
@@ -688,57 +688,57 @@
       },
       {
         "ticker": "NOK",
-        "price": 11.05,
-        "rsi": 60.21,
+        "price": 10.99,
+        "rsi": 59.7,
         "ma": 7.7,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IBM",
-        "price": 234.14,
-        "rsi": 49.84,
-        "ma": 260.17,
+        "price": 231.96,
+        "rsi": 47.46,
+        "ma": 260.16,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "NFLX",
-        "price": 76.5,
-        "rsi": 44.77,
+        "price": 76.43,
+        "rsi": 44.61,
         "ma": 100.46,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "USAR",
-        "price": 17.36,
-        "rsi": 46.11,
+        "price": 17.16,
+        "rsi": 45.03,
         "ma": 17.52,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "IREN",
-        "price": 46.6,
-        "rsi": 59.67,
+        "price": 46.67,
+        "rsi": 59.84,
         "ma": 37.81,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "APLD",
-        "price": 28.47,
-        "rsi": 51.76,
+        "price": 28.4,
+        "rsi": 51.53,
         "ma": 25.41,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "RKLB",
-        "price": 67.06,
-        "rsi": 43.61,
-        "ma": 63.53,
+        "price": 65.36,
+        "rsi": 40.11,
+        "ma": 63.52,
         "above_ma": true,
         "buy_signal": false
       }
@@ -746,48 +746,48 @@
     "ETFs": [
       {
         "ticker": "QQQM",
-        "price": 295.27,
-        "rsi": 52.25,
+        "price": 295.42,
+        "rsi": 52.53,
         "ma": 253.25,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SOXL",
-        "price": 124.85,
-        "rsi": 49.46,
+        "price": 125.48,
+        "rsi": 49.78,
         "ma": 74.51,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SPMO",
-        "price": 150.1,
-        "rsi": 53.96,
+        "price": 150.32,
+        "rsi": 54.54,
         "ma": 123.65,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MGK",
-        "price": 89.78,
-        "rsi": 52.9,
+        "price": 89.7,
+        "rsi": 52.45,
         "ma": 79.72,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SOXX",
-        "price": 530.45,
-        "rsi": 52.77,
-        "ma": 352.62,
+        "price": 531.4,
+        "rsi": 53.1,
+        "ma": 352.63,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IWB",
-        "price": 417.88,
-        "rsi": 48.94,
+        "price": 417.76,
+        "rsi": 48.75,
         "ma": 369.01,
         "above_ma": true,
         "buy_signal": false
@@ -795,183 +795,183 @@
       {
         "ticker": "KIE",
         "price": 61.83,
-        "rsi": 39.48,
+        "rsi": 39.49,
         "ma": 58.23,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "VDE",
-        "price": 185.26,
-        "rsi": 69.94,
+        "price": 184.94,
+        "rsi": 69.56,
         "ma": 138.73,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SCHD",
-        "price": 34.34,
-        "rsi": 47.92,
+        "price": 34.28,
+        "rsi": 46.69,
         "ma": 28.76,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "VHT",
-        "price": 313.27,
-        "rsi": 43.91,
+        "price": 314.17,
+        "rsi": 44.98,
         "ma": 272.37,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SPYM",
-        "price": 89.89,
-        "rsi": 49.19,
+        "price": 89.88,
+        "rsi": 49.11,
         "ma": 79.15,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "VFH",
-        "price": 138.66,
-        "rsi": 43.36,
-        "ma": 127.65,
+        "price": 139.04,
+        "rsi": 44.49,
+        "ma": 127.66,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SLV",
-        "price": 60.92,
-        "rsi": 56.02,
+        "price": 60.88,
+        "rsi": 55.92,
         "ma": 53.03,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IBB",
-        "price": 205.67,
-        "rsi": 50.2,
-        "ma": 160.22,
+        "price": 207.48,
+        "rsi": 52.92,
+        "ma": 160.23,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SMH",
-        "price": 575.03,
-        "rsi": 53.98,
+        "price": 574.6,
+        "rsi": 53.82,
         "ma": 397.84,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MAGS",
-        "price": 69.41,
-        "rsi": 57.58,
+        "price": 69.26,
+        "rsi": 56.91,
         "ma": 61.83,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "XLK",
-        "price": 188.2,
-        "rsi": 56.74,
+        "price": 188.18,
+        "rsi": 56.71,
         "ma": 146.9,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "ISPY",
-        "price": 48.08,
-        "rsi": 48.7,
+        "price": 48.05,
+        "rsi": 48.19,
         "ma": 43.26,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "QQQI",
-        "price": 54.62,
-        "rsi": 54.14,
+        "price": 54.65,
+        "rsi": 54.45,
         "ma": 48.56,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "XLE",
-        "price": 65.81,
-        "rsi": 70.14,
+        "price": 65.75,
+        "rsi": 69.94,
         "ma": 49.16,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IBIT",
-        "price": 44.9,
-        "rsi": 64.37,
+        "price": 44.92,
+        "rsi": 64.41,
         "ma": 50.75,
         "above_ma": false,
         "buy_signal": false
       },
       {
         "ticker": "SPXL",
-        "price": 282.8,
-        "rsi": 47.51,
+        "price": 282.69,
+        "rsi": 47.42,
         "ma": 216.27,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "TQQQ",
-        "price": 71.72,
-        "rsi": 50.36,
+        "price": 71.93,
+        "rsi": 50.87,
         "ma": 53.72,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "GDX",
-        "price": 100.56,
-        "rsi": 59.73,
+        "price": 100.12,
+        "rsi": 59.2,
         "ma": 77.23,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "QQQ",
-        "price": 716.97,
-        "rsi": 52.15,
+        "price": 717.64,
+        "rsi": 52.65,
         "ma": 615.22,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "SPY",
-        "price": 763.67,
-        "rsi": 49.2,
+        "price": 763.6,
+        "rsi": 49.14,
         "ma": 672.73,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "MTUM",
-        "price": 309.55,
-        "rsi": 54.4,
+        "price": 309.65,
+        "rsi": 54.5,
         "ma": 261.58,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "IWM",
-        "price": 293.3,
-        "rsi": 43.69,
+        "price": 292.86,
+        "rsi": 43.03,
         "ma": 251.08,
         "above_ma": true,
         "buy_signal": false
       },
       {
         "ticker": "DGRO",
-        "price": 78.06,
-        "rsi": 40.28,
+        "price": 78.08,
+        "rsi": 40.49,
         "ma": 69.22,
         "above_ma": true,
         "buy_signal": false
