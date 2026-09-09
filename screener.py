@@ -1,18 +1,23 @@
 """
 Intraday stock screener.
 
-For every ticker in tickers.json, pulls ~1 year of daily price history
-(today's row updates live during market hours), computes RSI(14) and the
-350-day simple moving average, and flags a "BUY OPPORTUNITY" when RSI < 33
-AND price is above the 350-day MA.
+For every ticker in tickers.json, pulls enough daily price history to cover
+MA_PERIOD (today's row updates live during market hours), computes RSI(14)
+and the MA_PERIOD-day simple moving average, and flags a "BUY OPPORTUNITY"
+when RSI is below RSI_BUY_THRESHOLD AND price is above that moving average.
 
 Writes results to results.json, which the dashboard (index.html) reads.
 
-Also emails you whenever a ticker newly crosses into BUY territory. It only
-suppresses repeat emails while a signal stays continuously active between
-checks — if it drops out and later re-qualifies the same day, that's treated
-as a fresh occurrence and you'll be emailed again. State resets each trading
-day (notified.json).
+Also flags a separate, lighter "RSI OVERSOLD" watch signal whenever RSI is
+33 or below, regardless of the MA condition — so oversold stocks that
+haven't cleared the trend filter still stand out on the dashboard, distinct
+from the stronger green BUY OPPORTUNITY signal.
+
+Also emails you whenever a ticker newly crosses into full BUY territory. It
+only suppresses repeat emails while a signal stays continuously active
+between checks — if it drops out and later re-qualifies the same day,
+that's treated as a fresh occurrence and you'll be emailed again. State
+resets each trading day (notified.json).
 """
 
 import json
@@ -62,6 +67,7 @@ def analyze_ticker(ticker: str) -> dict | None:
         rsi = compute_rsi(closes)
 
         buy_signal = (rsi < RSI_BUY_THRESHOLD) and (price > ma200)
+        rsi_oversold = rsi <= RSI_BUY_THRESHOLD  # RSI-only watch flag, regardless of MA
 
         return {
             "ticker": ticker,
@@ -70,6 +76,7 @@ def analyze_ticker(ticker: str) -> dict | None:
             "ma": round(ma200, 2),
             "above_ma": price > ma200,
             "buy_signal": buy_signal,
+            "rsi_oversold": rsi_oversold,
         }
     except Exception as e:
         print(f"[error] {ticker}: {e}", file=sys.stderr)
