@@ -4,17 +4,17 @@
       "APP", "IFNNY", "BE", "JBL", "IBM", "DRAM", "TSM", "META", "SNDK", "WDC",
       "EME", "EMR", "MU", "AVGO", "AMD", "VRT", "MSFT", "GOOGL", "AAPL", "INTC",
       "NVDA", "AMZN", "NOC", "ARM", "NBIS", "CLS", "CRDO", "MRVL", "ANET", "ETN",
-      "LRCX", "CBRS", "AMKR", "LMT", "COHR", "TER", "GLW", "ORCL", "AMAT", "TSLA",
-      "XPO", "COST", "CAT", "UNH", "ABBV", "ENTG", "DH", "TXN", "CRWD", "SCHW",
-      "ABT", "BA", "TT", "BAC", "LITE", "RCL", "ALAB", "LIN", "HON", "XYZ",
-      "VST", "ABNB", "HOOD", "ADI", "CDNS", "COPX", "RTX", "CSCO", "NXPI"
+      "LRCX", "CBRS", "AMKR", "LMT", "COHR", "TER", "GLW", "AMAT", "TSLA",
+      "COST", "CAT", "UNH", "ENTG", "DH", "TXN", "CRWD", "SCHW",
+      "ABT", "BA", "TT", "BAC", "LITE", "ALAB", "LIN", "HON", "XYZ",
+      "VST", "HOOD", "ADI", "CDNS", "COPX", "RTX", "CSCO", "NXPI"
     ],
     "Tier 2 Semi Stock": [
-      "QNT", "POET", "CCJ", "TXT", "A", "AA", "SCCO", "EXE", "PLTR", "SOFI",
-      "MCD", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI", "TJX",
-      "ZS", "VZ", "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG",
-      "SHOP", "NOK", "JPM", "NFLX", "USAR", "IREN", "APLD", "RKLB", "LOW", "NU",
-      "SFTBY", "GFS"
+      "QNT", "CCJ", "TXT", "A", "AA", "SCCO", "EXE", "PLTR", 
+      "MCD", "HUT", "KLAC","SMTC", "SPCX", "SMCI", "TJX",
+      "VZ", "QCOM", "CRWV", "STM", "COIN", "PENG", "CEG",
+      "SHOP", "NOK", "JPM", "NFLX", "USAR", "IREN", "APLD", "RKLB", "LOW", 
+      "GFS"
     ],
     "ETFs": [
       "QQQM", "SOXL", "SPMO", "MGK", "SOXX", "IWB", "KIE", "VDE", "SCHD", "VHT",
