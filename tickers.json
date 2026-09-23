@@ -1,22 +1,22 @@
 {
   "categories": {
     "Top Semi Stock": [
-      "APP", "IFNNY", "BE", "JBL", "IBM", "DRAM", "TSM", "META", "SNDK", "WDC","EME",
-      "MU", "AVGO", "AMD", "VRT", "MSFT", "GOOGL", "AAPL", "INTC", "NVDA", "AMZN",
-      "ARM", "NBIS", "CLS", "CRDO", "MRVL", "ANET", "ETN", "LRCX", "CBRS", "AMKR",
-      "COHR", "TER", "GLW", "ORCL", "AMAT", "TSLA", "XPO", "COST", "CAT", "UNH","ABBV",
-      "DH", "TXN", "CRWD", "SCHW", "ABT", "BA", "TT", "BAC", "LITE", "RCL","ALAB",
+      "APP", "IFNNY", "BE", "JBL", "IBM", "DRAM", "TSM", "META", "SNDK", "WDC","EME","EMR",
+      "MU", "AVGO", "AMD", "VRT", "MSFT", "GOOGL", "AAPL", "INTC", "NVDA", "AMZN","NOC",
+      "ARM", "NBIS", "CLS", "CRDO", "MRVL", "ANET", "ETN", "LRCX", "CBRS", "AMKR","LMT",
+      "COHR", "TER", "GLW", "ORCL", "AMAT", "TSLA", "XPO", "COST", "CAT", "UNH","ABBV","ENTG",
+      "DH", "TXN", "CRWD", "SCHW", "ABT", "BA", "TT", "BAC", "LITE", "RCL","ALAB","LIN",
       "HON", "XYZ", "VST", "ABNB", "HOOD", "ADI", "CDNS","COPX","RTX","CSCO","NXPI"
     ],
     "Tier 2 Semi Stock": [
       "QNT", "POET", "CCJ", "TXT", "A", "AA", "SCCO", "TSLA", "EXE", "PLTR", "SOFI","MCD",
-      "HOOD", "RRX", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI","TJX",
+      "HOOD", "HUT", "KLAC", "SYM", "SMTC", "DDOG", "SPCX", "SIMO", "SMCI","TJX","ZS","VZ",
       "QCOM", "CRWV", "CRCL", "QBTS", "STM", "COIN", "PENG", "CEG", "SHOP", "DRAM","LMT",
-      "NOK", "IBM", "NFLX", "USAR", "IREN", "APLD", "RKLB", "LOW","NU","A","SFTBY","GFS"
+      "NOK", "JPM", "NFLX", "USAR", "IREN", "APLD", "RKLB", "LOW","NU","A","SFTBY","GFS"
     ],
     "ETFs": [
-      "QQQM", "SOXL", "SPMO", "MGK", "SOXX", "IWB", "KIE", "VDE", "SCHD", "VHT","LYTE",
-      "SPYM", "VFH", "SLV", "IBB", "SMH", "MAGS", "XLK", "ISPY", "QQQI", "XLE","XBI","SPMO",
+      "QQQM", "SOXL", "SPMO", "MGK", "SOXX", "IWB", "KIE", "VDE", "SCHD", "VHT","LYTE","USD",
+      "SPYM", "VFH", "SLV", "IBB", "SMH", "MAGS", "XLK", "ISPY", "QQQI", "XLE","XBI","SPMO","FAS",
       "IBIT", "SPXL", "TQQQ", "GDX", "QQQ", "SPY", "MTUM", "IWM", "DGRO","VIS","VGT","MTUM"
     ]
   }
