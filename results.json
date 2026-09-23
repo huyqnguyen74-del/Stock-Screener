@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-09-23T02:14:01.745979+00:00",
+  "generated_at": "2026-09-23T02:26:27.754892+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
     "Top Semi Stock": [
       {
         "ticker": "APP",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.19,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IFNNY",
@@ -14,20 +18,31 @@
         "rsi": 56.04,
         "ma": 52.81,
         "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "buy_signal": false
       },
       {
         "ticker": "BE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.58,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "JBL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 45.57,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IBM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 46.24,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "DRAM",
@@ -35,103 +50,203 @@
       },
       {
         "ticker": "TSM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.93,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "META",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 77.87,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SNDK",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.77,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "WDC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 47.61,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "EME",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.1,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "EMR",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.88,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MU",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.24,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AVGO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.0,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AMD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 72.96,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VRT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 45.9,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MSFT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 57.26,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "GOOGL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.9,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AAPL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 66.37,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "INTC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 70.92,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NVDA",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.39,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AMZN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 52.69,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NOC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 44.48,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ARM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 69.49,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NBIS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.37,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CLS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 57.38,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRDO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.12,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MRVL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 62.42,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ANET",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.85,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ETN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.35,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LRCX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 51.36,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CBRS",
@@ -139,151 +254,299 @@
       },
       {
         "ticker": "AMKR",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 52.86,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LMT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 44.34,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "COHR",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 57.11,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TER",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 54.88,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "GLW",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.45,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ORCL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.48,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AMAT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.74,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TSLA",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.61,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "XPO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 31.23,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "COST",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 37.95,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CAT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.2,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "UNH",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 39.36,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ABBV",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.61,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ENTG",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 54.02,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "DH",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.6,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TXN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 54.64,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRWD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 64.64,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SCHW",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.74,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ABT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 39.43,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "BA",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.28,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 41.63,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "BAC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 31.61,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LITE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.91,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "RCL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 29.96,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ALAB",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 60.63,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LIN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 30.91,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "HON",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.72,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "XYZ",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 44.79,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VST",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 45.56,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ABNB",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 41.4,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "HOOD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 62.31,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ADI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.2,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CDNS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 44.06,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "COPX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.18,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "RTX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 31.98,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CSCO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.93,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NXPI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 52.34,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       }
     ],
     "Tier 2 Semi Stock": [
@@ -293,63 +556,123 @@
       },
       {
         "ticker": "POET",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.75,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CCJ",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 43.68,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TXT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 36.6,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "A",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 68.96,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "AA",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 36.27,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SCCO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.98,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "EXE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 30.18,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "PLTR",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.13,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SOFI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 43.87,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MCD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 31.94,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "HUT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.45,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "KLAC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 51.47,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SYM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.78,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SMTC",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 62.57,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "DDOG",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 56.96,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPCX",
@@ -357,31 +680,59 @@
       },
       {
         "ticker": "SIMO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.79,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SMCI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.62,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TJX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 42.11,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ZS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 67.62,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VZ",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 39.91,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "QCOM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 65.87,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRWV",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.73,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CRCL",
@@ -389,63 +740,123 @@
       },
       {
         "ticker": "QBTS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.66,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "STM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 50.82,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "COIN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 60.44,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "PENG",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.34,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "CEG",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 42.46,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SHOP",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 51.26,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NOK",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 56.8,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "JPM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.12,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NFLX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 40.8,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "USAR",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.87,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IREN",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 60.12,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "APLD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.68,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "RKLB",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.96,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LOW",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 29.25,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "NU",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 44.86,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SFTBY",
@@ -453,54 +864,97 @@
         "rsi": 62.7,
         "ma": 14.62,
         "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "buy_signal": false
       },
       {
         "ticker": "GFS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.42,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       }
     ],
     "ETFs": [
       {
         "ticker": "QQQM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 65.92,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SOXL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.28,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPMO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.55,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MGK",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 68.41,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SOXX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.87,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IWB",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.73,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "KIE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.99,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VDE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 45.93,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SCHD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 39.32,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VHT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 52.68,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "LYTE",
@@ -508,99 +962,195 @@
       },
       {
         "ticker": "USD",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 60.24,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPYM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.84,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VFH",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.61,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SLV",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.01,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IBB",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 53.44,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SMH",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.09,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MAGS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 70.38,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "XLK",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 65.49,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "ISPY",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 55.38,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "QQQI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 66.44,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "XLE",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 47.44,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "XBI",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 48.56,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "FAS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.31,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IBIT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 72.05,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPXL",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 58.4,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "TQQQ",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 64.86,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "GDX",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 49.64,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "QQQ",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 65.97,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "SPY",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 59.8,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "MTUM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 61.17,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "IWM",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 38.73,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "DGRO",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 40.01,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VIS",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 37.51,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       },
       {
         "ticker": "VGT",
-        "error": "no_data_this_run"
+        "price": NaN,
+        "rsi": 65.91,
+        "ma": NaN,
+        "above_ma": false,
+        "buy_signal": false
       }
     ]
   }
