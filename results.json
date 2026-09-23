@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T02:58:21.585143+00:00",
+  "generated_at": "2026-09-23T04:08:42.424408+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -10,12 +10,7 @@
       },
       {
         "ticker": "IFNNY",
-        "price": 69.2,
-        "rsi": 56.04,
-        "ma": 52.81,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "BE",
@@ -158,19 +153,11 @@
         "error": "no_data_this_run"
       },
       {
-        "ticker": "ORCL",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "AMAT",
         "error": "no_data_this_run"
       },
       {
         "ticker": "TSLA",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "XPO",
         "error": "no_data_this_run"
       },
       {
@@ -183,10 +170,6 @@
       },
       {
         "ticker": "UNH",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "ABBV",
         "error": "no_data_this_run"
       },
       {
@@ -230,10 +213,6 @@
         "error": "no_data_this_run"
       },
       {
-        "ticker": "RCL",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "ALAB",
         "error": "no_data_this_run"
       },
@@ -251,10 +230,6 @@
       },
       {
         "ticker": "VST",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "ABNB",
         "error": "no_data_this_run"
       },
       {
@@ -292,10 +267,6 @@
         "error": "insufficient_history"
       },
       {
-        "ticker": "POET",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "CCJ",
         "error": "no_data_this_run"
       },
@@ -324,10 +295,6 @@
         "error": "no_data_this_run"
       },
       {
-        "ticker": "SOFI",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "MCD",
         "error": "no_data_this_run"
       },
@@ -340,15 +307,7 @@
         "error": "no_data_this_run"
       },
       {
-        "ticker": "SYM",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "SMTC",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "DDOG",
         "error": "no_data_this_run"
       },
       {
@@ -356,19 +315,11 @@
         "error": "insufficient_history"
       },
       {
-        "ticker": "SIMO",
-        "error": "no_data_this_run"
-      },
-      {
         "ticker": "SMCI",
         "error": "no_data_this_run"
       },
       {
         "ticker": "TJX",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "ZS",
         "error": "no_data_this_run"
       },
       {
@@ -381,14 +332,6 @@
       },
       {
         "ticker": "CRWV",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "CRCL",
-        "error": "insufficient_history"
-      },
-      {
-        "ticker": "QBTS",
         "error": "no_data_this_run"
       },
       {
@@ -442,19 +385,6 @@
       {
         "ticker": "LOW",
         "error": "no_data_this_run"
-      },
-      {
-        "ticker": "NU",
-        "error": "no_data_this_run"
-      },
-      {
-        "ticker": "SFTBY",
-        "price": 22.1,
-        "rsi": 62.7,
-        "ma": 14.62,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
       },
       {
         "ticker": "GFS",
