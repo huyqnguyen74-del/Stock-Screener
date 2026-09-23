@@ -23,8 +23,10 @@ resets each trading day (notified.json).
 import json
 import math
 import os
+import random
 import smtplib
 import sys
+import time
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
 
@@ -36,6 +38,14 @@ MA_PERIOD = 350
 RSI_BUY_THRESHOLD = 33
 
 NOTIFIED_FILE = "notified.json"
+
+# Yahoo Finance throttles/blocks IPs that send too many requests too fast —
+# and GitHub Actions runners share IP pools across many unrelated projects,
+# so this can trip even with a modest ticker list. These two settings slow
+# the run down deliberately to stay under the radar.
+REQUEST_DELAY_RANGE = (0.8, 1.8)  # random pause between each ticker, seconds
+MAX_RETRIES = 3
+RETRY_BACKOFF_BASE = 8  # seconds; doubles each retry (8s, 16s, 32s)
 
 
 def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
@@ -52,12 +62,31 @@ def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
     return float(rsi.iloc[-1])
 
 
+def fetch_history(ticker: str, years_needed: int) -> pd.DataFrame:
+    """Pulls price history, automatically retrying with backoff if Yahoo
+    rate-limits the request (a common, well-documented yfinance issue)."""
+    last_error = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            return yf.Ticker(ticker).history(period=f"{years_needed}y", interval="1d", auto_adjust=True)
+        except Exception as e:
+            last_error = e
+            is_rate_limit = "rate" in str(e).lower() or "too many requests" in str(e).lower()
+            if is_rate_limit and attempt < MAX_RETRIES:
+                wait = RETRY_BACKOFF_BASE * (2 ** (attempt - 1))
+                print(f"  [rate-limit] {ticker}: attempt {attempt}/{MAX_RETRIES}, waiting {wait}s before retry")
+                time.sleep(wait)
+            else:
+                raise
+    raise last_error
+
+
 def analyze_ticker(ticker: str) -> dict | None:
     try:
         # Pull enough calendar history to cover MA_PERIOD trading days,
         # plus a comfortable buffer — trading days are ~69% of calendar days.
         years_needed = max(1, (MA_PERIOD // 200) + 1)
-        hist = yf.Ticker(ticker).history(period=f"{years_needed}y", interval="1d", auto_adjust=True)
+        hist = fetch_history(ticker, years_needed)
         if hist.empty or len(hist) < MA_PERIOD:
             print(f"[skip] {ticker}: not enough history ({len(hist)} rows)")
             return {"ticker": ticker, "error": "insufficient_history"}
@@ -170,6 +199,7 @@ def main():
             category_results.append(data)
             if data.get("buy_signal"):
                 all_buy_signals.append({**data, "category": category})
+            time.sleep(random.uniform(*REQUEST_DELAY_RANGE))  # spread requests out, avoid tripping rate limits
         results["categories"][category] = category_results
 
     with open("results.json", "w") as f:
