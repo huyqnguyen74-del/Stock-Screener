@@ -62,64 +62,52 @@ def compute_rsi(closes: pd.Series, period: int = RSI_PERIOD) -> float:
     return float(rsi.iloc[-1])
 
 
-def fetch_history(ticker: str, years_needed: int) -> pd.DataFrame:
-    """Pulls price history, automatically retrying with backoff if Yahoo
-    rate-limits the request (a common, well-documented yfinance issue)."""
+def analyze_ticker(ticker: str) -> dict | None:
+    years_needed = max(1, (MA_PERIOD // 200) + 1)
     last_error = None
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            return yf.Ticker(ticker).history(period=f"{years_needed}y", interval="1d", auto_adjust=True)
+            hist = yf.Ticker(ticker).history(period=f"{years_needed}y", interval="1d", auto_adjust=True)
+            if hist.empty or len(hist) < MA_PERIOD:
+                # Genuinely not enough history — more retries won't fix this, stop immediately.
+                print(f"[skip] {ticker}: not enough history ({len(hist)} rows)")
+                return {"ticker": ticker, "error": "insufficient_history"}
+
+            closes = hist["Close"]
+            price = float(closes.iloc[-1])
+            ma200 = float(closes.rolling(MA_PERIOD).mean().iloc[-1])
+            rsi = compute_rsi(closes)
+
+            # Yahoo sometimes returns a "successful" response with NO error
+            # raised, but garbage/NaN price data inside (this is the common
+            # failure mode when its rate limiting kicks in — not always a
+            # clean exception). Treat this the same as a failed attempt so
+            # it gets retried too, not just hard errors.
+            if any(math.isnan(x) for x in (price, ma200, rsi)):
+                raise ValueError("Yahoo returned no usable price data this attempt")
+
+            buy_signal = (rsi < RSI_BUY_THRESHOLD) and (price > ma200)
+            rsi_oversold = rsi <= RSI_BUY_THRESHOLD  # RSI-only watch flag, regardless of MA
+
+            return {
+                "ticker": ticker,
+                "price": round(price, 2),
+                "rsi": round(rsi, 2),
+                "ma": round(ma200, 2),
+                "above_ma": price > ma200,
+                "buy_signal": buy_signal,
+                "rsi_oversold": rsi_oversold,
+            }
         except Exception as e:
             last_error = e
-            is_rate_limit = "rate" in str(e).lower() or "too many requests" in str(e).lower()
-            if is_rate_limit and attempt < MAX_RETRIES:
+            if attempt < MAX_RETRIES:
                 wait = RETRY_BACKOFF_BASE * (2 ** (attempt - 1))
-                print(f"  [rate-limit] {ticker}: attempt {attempt}/{MAX_RETRIES}, waiting {wait}s before retry")
+                print(f"  [retry] {ticker}: attempt {attempt}/{MAX_RETRIES} failed ({e}), waiting {wait}s")
                 time.sleep(wait)
-            else:
-                raise
-    raise last_error
 
-
-def analyze_ticker(ticker: str) -> dict | None:
-    try:
-        # Pull enough calendar history to cover MA_PERIOD trading days,
-        # plus a comfortable buffer — trading days are ~69% of calendar days.
-        years_needed = max(1, (MA_PERIOD // 200) + 1)
-        hist = fetch_history(ticker, years_needed)
-        if hist.empty or len(hist) < MA_PERIOD:
-            print(f"[skip] {ticker}: not enough history ({len(hist)} rows)")
-            return {"ticker": ticker, "error": "insufficient_history"}
-
-        closes = hist["Close"]
-        price = float(closes.iloc[-1])
-        ma200 = float(closes.rolling(MA_PERIOD).mean().iloc[-1])
-        rsi = compute_rsi(closes)
-
-        # Yahoo occasionally returns no usable price for today's row (data
-        # delay, holiday, feed hiccup). NaN isn't valid JSON — writing it
-        # straight to results.json would corrupt the whole file and blank
-        # out the ENTIRE dashboard, not just this ticker. Catch it here and
-        # degrade this one ticker to a normal "unavailable" entry instead.
-        if any(math.isnan(x) for x in (price, ma200, rsi)):
-            print(f"[skip] {ticker}: NaN in price/ma/rsi — no usable data this run")
-            return {"ticker": ticker, "error": "no_data_this_run"}
-
-        buy_signal = (rsi < RSI_BUY_THRESHOLD) and (price > ma200)
-        rsi_oversold = rsi <= RSI_BUY_THRESHOLD  # RSI-only watch flag, regardless of MA
-
-        return {
-            "ticker": ticker,
-            "price": round(price, 2),
-            "rsi": round(rsi, 2),
-            "ma": round(ma200, 2),
-            "above_ma": price > ma200,
-            "buy_signal": buy_signal,
-            "rsi_oversold": rsi_oversold,
-        }
-    except Exception as e:
-        print(f"[error] {ticker}: {e}", file=sys.stderr)
-        return {"ticker": ticker, "error": str(e)}
+    print(f"[skip] {ticker}: gave up after {MAX_RETRIES} attempts — {last_error}")
+    return {"ticker": ticker, "error": "no_data_this_run"}
 
 
 def load_notified(today: str) -> set:
