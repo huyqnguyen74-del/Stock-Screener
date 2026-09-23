@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T01:40:51.073687+00:00",
+  "generated_at": "2026-09-23T02:00:31.687217+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -676,15 +676,6 @@
         "rsi_oversold": false
       },
       {
-        "ticker": "TSLA",
-        "price": NaN,
-        "rsi": 58.61,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
-      },
-      {
         "ticker": "EXE",
         "price": NaN,
         "rsi": 30.18,
@@ -719,15 +710,6 @@
         "above_ma": false,
         "buy_signal": false,
         "rsi_oversold": true
-      },
-      {
-        "ticker": "HOOD",
-        "price": NaN,
-        "rsi": 62.31,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
       },
       {
         "ticker": "HUT",
@@ -900,19 +882,6 @@
         "rsi_oversold": false
       },
       {
-        "ticker": "DRAM",
-        "error": "insufficient_history"
-      },
-      {
-        "ticker": "LMT",
-        "price": NaN,
-        "rsi": 44.34,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
-      },
-      {
         "ticker": "NOK",
         "price": NaN,
         "rsi": 56.8,
@@ -988,15 +957,6 @@
         "ticker": "NU",
         "price": NaN,
         "rsi": 44.86,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
-      },
-      {
-        "ticker": "A",
-        "price": NaN,
-        "rsi": 68.96,
         "ma": NaN,
         "above_ma": false,
         "buy_signal": false,
@@ -1225,15 +1185,6 @@
         "rsi_oversold": false
       },
       {
-        "ticker": "SPMO",
-        "price": NaN,
-        "rsi": 59.55,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
-      },
-      {
         "ticker": "FAS",
         "price": NaN,
         "rsi": 38.31,
@@ -1336,15 +1287,6 @@
         "ticker": "VGT",
         "price": NaN,
         "rsi": 65.91,
-        "ma": NaN,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
-      },
-      {
-        "ticker": "MTUM",
-        "price": NaN,
-        "rsi": 61.17,
         "ma": NaN,
         "above_ma": false,
         "buy_signal": false,
