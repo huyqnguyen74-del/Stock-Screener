@@ -21,6 +21,7 @@ resets each trading day (notified.json).
 """
 
 import json
+import math
 import os
 import smtplib
 import sys
@@ -65,6 +66,15 @@ def analyze_ticker(ticker: str) -> dict | None:
         price = float(closes.iloc[-1])
         ma200 = float(closes.rolling(MA_PERIOD).mean().iloc[-1])
         rsi = compute_rsi(closes)
+
+        # Yahoo occasionally returns no usable price for today's row (data
+        # delay, holiday, feed hiccup). NaN isn't valid JSON — writing it
+        # straight to results.json would corrupt the whole file and blank
+        # out the ENTIRE dashboard, not just this ticker. Catch it here and
+        # degrade this one ticker to a normal "unavailable" entry instead.
+        if any(math.isnan(x) for x in (price, ma200, rsi)):
+            print(f"[skip] {ticker}: NaN in price/ma/rsi — no usable data this run")
+            return {"ticker": ticker, "error": "no_data_this_run"}
 
         buy_signal = (rsi < RSI_BUY_THRESHOLD) and (price > ma200)
         rsi_oversold = rsi <= RSI_BUY_THRESHOLD  # RSI-only watch flag, regardless of MA
