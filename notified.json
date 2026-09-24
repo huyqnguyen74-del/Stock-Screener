@@ -2,6 +2,9 @@
   "date": "2026-09-24",
   "tickers": [
     "BAC",
+    "IWM",
+    "JPM",
+    "KIE",
     "RTX",
     "SCHW",
     "VFH"
