@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T22:01:30.249490+00:00",
+  "generated_at": "2026-10-13T01:44:59.369237+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -384,7 +384,7 @@
       {
         "ticker": "DH",
         "price": 0.98,
-        "rsi": 55.61,
+        "rsi": 55.56,
         "ma": 2.15,
         "above_ma": false,
         "buy_signal": false,
@@ -518,7 +518,7 @@
       },
       {
         "ticker": "ADI",
-        "price": 406.24,
+        "price": 406.25,
         "rsi": 60.57,
         "ma": 308.73,
         "above_ma": true,
