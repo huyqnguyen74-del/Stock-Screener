@@ -1,7 +1,10 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "tickers": [
-    "IWM",
+    "AMAT",
+    "CAT",
+    "SNDK",
+    "SPMO",
     "WDC"
   ]
 }
