@@ -1,23 +1,7 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "tickers": [
     "AMAT",
-    "ANET",
-    "CAT",
-    "HUT",
-    "INTC",
-    "IWM",
-    "KLAC",
-    "LRCX",
-    "MTUM",
-    "NBIS",
-    "SMH",
-    "SNDK",
-    "SOXL",
-    "SOXX",
-    "SPMO",
-    "STM",
-    "USD",
-    "WDC"
+    "CAT"
   ]
 }
