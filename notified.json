@@ -1,10 +1,11 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "tickers": [
     "AMAT",
     "CAT",
+    "ETN",
     "KLAC",
-    "SPMO",
-    "STM"
+    "NBIS",
+    "SPMO"
   ]
 }
