@@ -1,26 +1,19 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "tickers": [
-    "ALAB",
     "AMAT",
-    "ANET",
     "ARM",
+    "BE",
     "CAT",
     "COPX",
-    "GLW",
+    "GOOGL",
     "HUT",
-    "IFNNY",
     "INTC",
-    "KLAC",
     "LRCX",
-    "MTUM",
     "NBIS",
-    "SCCO",
-    "SMH",
     "SNDK",
     "SOXX",
     "SPMO",
-    "TER",
-    "USD"
+    "STM"
   ]
 }
