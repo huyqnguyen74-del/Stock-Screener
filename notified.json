@@ -1,13 +1,7 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "tickers": [
-    "AMAT",
-    "CAT",
-    "COPX",
-    "GOOGL",
     "KLAC",
-    "LRCX",
-    "NBIS",
-    "SNDK"
+    "LRCX"
   ]
 }
