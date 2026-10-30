@@ -1,6 +1,16 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "tickers": [
-    "TER"
+    "COPX",
+    "INTC",
+    "LRCX",
+    "MGK",
+    "MRVL",
+    "QQQI",
+    "SNDK",
+    "SPMO",
+    "TER",
+    "TQQQ",
+    "USD"
   ]
 }
