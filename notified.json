@@ -1,10 +1,24 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "tickers": [
+    "ALAB",
+    "ARM",
     "COPX",
-    "INTC",
+    "LRCX",
+    "MGK",
+    "MRVL",
+    "MTUM",
+    "NBIS",
+    "QQQ",
+    "QQQI",
+    "QQQM",
     "SNDK",
+    "SOXX",
     "SPMO",
-    "TER"
+    "TER",
+    "TQQQ",
+    "USD",
+    "VGT",
+    "XLK"
   ]
 }
