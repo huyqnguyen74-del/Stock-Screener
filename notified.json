@@ -1,16 +1,10 @@
 {
   "date": "2026-11-03",
   "tickers": [
-    "MGK",
-    "MTUM",
-    "QQQ",
-    "QQQI",
-    "QQQM",
-    "SOXX",
+    "COPX",
+    "LRCX",
+    "MRVL",
     "SPMO",
-    "TQQQ",
-    "USD",
-    "VGT",
-    "XLK"
+    "TER"
   ]
 }
