@@ -1,12 +1,18 @@
 {
   "date": "2026-11-05",
   "tickers": [
-    "ALAB",
-    "LITE",
-    "LRCX",
-    "MRVL",
-    "MTUM",
+    "AMD",
+    "CSCO",
+    "MGK",
+    "MU",
+    "QQQ",
+    "QQQI",
+    "QQQM",
+    "SCCO",
+    "SMH",
     "SNDK",
-    "SPMO"
+    "TSM",
+    "VGT",
+    "XLK"
   ]
 }
