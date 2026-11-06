@@ -1,18 +1,15 @@
 {
   "date": "2026-11-06",
   "tickers": [
-    "AMD",
     "CSCO",
-    "MGK",
     "MU",
-    "PENG",
+    "PLTR",
     "QQQ",
     "QQQM",
     "SCCO",
     "SMH",
     "SNDK",
-    "SPXL",
-    "TSM",
+    "SOXX",
     "VGT",
     "XLK"
   ]
