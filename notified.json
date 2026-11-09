@@ -1,17 +1,7 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "tickers": [
-    "CSCO",
     "MRVL",
-    "MU",
-    "QQQ",
-    "QQQI",
-    "QQQM",
-    "SCCO",
-    "SMH",
-    "SNDK",
-    "SOXX",
-    "VGT",
-    "XLK"
+    "SNDK"
   ]
 }
