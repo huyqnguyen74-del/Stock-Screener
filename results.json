@@ -1,17 +1,12 @@
 {
-  "generated_at": "2026-11-09T23:20:03.971936+00:00",
+  "generated_at": "2026-11-10T02:29:11.158078+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
     "Top Semi Stock": [
       {
         "ticker": "APP",
-        "price": 410.0,
-        "rsi": 78.32,
-        "ma": 465.7,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "IFNNY",
@@ -24,30 +19,15 @@
       },
       {
         "ticker": "BE",
-        "price": 193.88,
-        "rsi": 42.57,
-        "ma": 160.99,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "JBL",
-        "price": 252.56,
-        "rsi": 38.91,
-        "ma": 269.08,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "IBM",
-        "price": 246.11,
-        "rsi": 52.65,
-        "ma": 258.71,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "DRAM",
@@ -55,111 +35,51 @@
       },
       {
         "ticker": "TSM",
-        "price": 388.62,
-        "rsi": 41.26,
-        "ma": 344.3,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "META",
-        "price": 641.37,
-        "rsi": 46.5,
-        "ma": 659.38,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "SNDK",
-        "price": 886.51,
-        "rsi": 30.01,
-        "ma": 793.19,
-        "above_ma": true,
-        "buy_signal": true,
-        "rsi_oversold": true
+        "error": "no_data_this_run"
       },
       {
         "ticker": "WDC",
-        "price": 289.78,
-        "rsi": 35.49,
-        "ma": 293.58,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "EME",
-        "price": 652.89,
-        "rsi": 42.58,
-        "ma": 713.16,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "EMR",
-        "price": 169.52,
-        "rsi": 59.25,
-        "ma": 141.16,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "MU",
-        "price": 733.15,
-        "rsi": 36.36,
-        "ma": 516.0,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "AVGO",
-        "price": 319.48,
-        "rsi": 44.69,
-        "ma": 349.46,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "AMD",
-        "price": 508.58,
-        "rsi": 47.67,
-        "ma": 321.43,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "VRT",
-        "price": 200.47,
-        "rsi": 43.59,
-        "ma": 220.94,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "MSFT",
-        "price": 545.18,
-        "rsi": 57.47,
-        "ma": 464.01,
-        "above_ma": true,
-        "buy_signal": false,
-        "rsi_oversold": false
+        "error": "no_data_this_run"
       },
       {
         "ticker": "GOOGL",
-        "price": 288.15,
-        "rsi": 32.88,
-        "ma": 301.4,
-        "above_ma": false,
-        "buy_signal": false,
-        "rsi_oversold": true
+        "error": "no_data_this_run"
       },
       {
         "ticker": "AAPL",
