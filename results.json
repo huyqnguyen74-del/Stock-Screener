@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T21:22:58.839306+00:00",
+  "generated_at": "2026-11-13T00:50:26.340498+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -863,7 +863,7 @@
       },
       {
         "ticker": "SOXL",
-        "price": 65.52,
+        "price": 65.53,
         "rsi": 39.94,
         "ma": 86.85,
         "above_ma": false,
@@ -1038,8 +1038,8 @@
       },
       {
         "ticker": "XLE",
-        "price": 64.32,
-        "rsi": 46.85,
+        "price": 64.33,
+        "rsi": 46.89,
         "ma": 52.15,
         "above_ma": true,
         "buy_signal": false,
