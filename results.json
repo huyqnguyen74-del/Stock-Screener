@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T23:16:02.300221+00:00",
+  "generated_at": "2026-11-17T02:42:51.377728+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -34,8 +34,8 @@
       {
         "ticker": "JBL",
         "price": 246.76,
-        "rsi": 38.19,
-        "ma": 269.7,
+        "rsi": 38.22,
+        "ma": 269.61,
         "above_ma": false,
         "buy_signal": false,
         "rsi_oversold": false
@@ -660,8 +660,8 @@
       {
         "ticker": "KLAC",
         "price": 143.96,
-        "rsi": 40.7,
-        "ma": 150.93,
+        "rsi": 40.8,
+        "ma": 150.7,
         "above_ma": false,
         "buy_signal": false,
         "rsi_oversold": false
@@ -681,8 +681,8 @@
       },
       {
         "ticker": "SMCI",
-        "price": 25.02,
-        "rsi": 33.08,
+        "price": 25.03,
+        "rsi": 33.09,
         "ma": 36.86,
         "above_ma": false,
         "buy_signal": false,
@@ -754,8 +754,8 @@
       {
         "ticker": "CEG",
         "price": 277.82,
-        "rsi": 55.21,
-        "ma": 303.38,
+        "rsi": 55.44,
+        "ma": 302.91,
         "above_ma": false,
         "buy_signal": false,
         "rsi_oversold": false
