@@ -44,7 +44,7 @@ NOTIFIED_FILE = "notified.json"
 # so this can trip even with a modest ticker list. These two settings slow
 # the run down deliberately to stay under the radar.
 REQUEST_DELAY_RANGE = (0.8, 1.8)  # random pause between each ticker, seconds
-MAX_RETRIES = 3
+MAX_RETRIES = 1
 RETRY_BACKOFF_BASE = 8  # seconds; doubles each retry (8s, 16s, 32s)
 
 
