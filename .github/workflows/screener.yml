@@ -2,21 +2,29 @@ name: Intraday Stock Screener
 
 on:
   schedule:
-    # Every 15 minutes, 6:30am-1:00pm PDT (summer), Monday-Friday.
-    # GitHub cron is always UTC and does not shift for daylight saving,
-    # so this window becomes 5:30am-12:00pm during PST (winter).
-    # Shift every hour value below by -1 in winter if you want it exact.
-    - cron: "30,45 13 * * 1-5"        # 13:30, 13:45 UTC
-    - cron: "0,15,30,45 14-19 * * 1-5" # 14:00 through 19:45 UTC, every 15 min
-    - cron: "0 20 * * 1-5"             # 20:00 UTC (1:00pm PDT)
+    # Every 15 minutes, 6:30am-1:00pm PST (winter), Monday-Friday.
+    # GitHub cron is always UTC and does not shift for daylight saving.
+    # When DST starts again (around March 8, 2027), subtract 1 from every
+    # hour value below (14 -> 13, 15-20 -> 14-19, 21 -> 20).
+    - cron: "30,45 14 * * 1-5"         # 14:30, 14:45 UTC = 6:30am, 6:45am PST
+    - cron: "0,15,30,45 15-20 * * 1-5" # 15:00 through 20:45 UTC, every 15 min
+    - cron: "0 21 * * 1-5"             # 21:00 UTC = 1:00pm PST
   workflow_dispatch: {}   # lets you trigger it manually from the Actions tab to test
 
 permissions:
   contents: write
 
+# Only one screener run at a time. If a run is still going when the next
+# one is due, the next one waits instead of running in parallel and
+# colliding when both try to save results.
+concurrency:
+  group: intraday-screener
+  cancel-in-progress: false
+
 jobs:
   run-screener:
     runs-on: ubuntu-latest
+    timeout-minutes: 20   # a run should take a few minutes; never let one hang for an hour
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -42,5 +50,15 @@ jobs:
           git config user.email "actions@github.com"
           git add results.json notified.json
           git diff --quiet --cached || git commit -m "Update results $(date -u +%Y-%m-%dT%H:%M)"
-          git push
-
+          # If the repo changed while this run was working (a manual edit, for
+          # example), pull those changes in first and retry, instead of failing.
+          pushed=false
+          for attempt in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then
+              pushed=true
+              break
+            fi
+            echo "Push attempt $attempt failed, retrying in 5s..."
+            sleep 5
+          done
+          $pushed
