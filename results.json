@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T03:24:08.982284+00:00",
+  "generated_at": "2026-11-26T23:11:43.827332+00:00",
   "rsi_threshold": 33,
   "ma_period": 350,
   "categories": {
@@ -15,8 +15,8 @@
       },
       {
         "ticker": "IFNNY",
-        "price": 47.3,
-        "rsi": 36.14,
+        "price": 47.33,
+        "rsi": 36.17,
         "ma": 55.49,
         "above_ma": false,
         "buy_signal": false,
